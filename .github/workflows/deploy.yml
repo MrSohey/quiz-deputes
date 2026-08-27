@@ -1,0 +1,45 @@
+# Publication sur GitHub Pages.
+#
+# ⚠️ DÉCLENCHEMENT MANUEL UNIQUEMENT, et c'est délibéré : les portraits appartiennent
+# à l'Assemblée nationale, qui interdit la reproduction de ses photographies. Tant
+# que l'autorisation demandée à communication@assemblee-nationale.fr n'est pas
+# arrivée, le site ne doit pas être publié (CLAUDE.md §6.3 et §11).
+#
+# Ne PAS ajouter de déclencheur `push` avant d'avoir la réponse.
+name: Déploiement
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 24, cache: npm }
+      - run: npm ci
+      - run: npm run verify
+      - run: npm run build
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: dist }
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

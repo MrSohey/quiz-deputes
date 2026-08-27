@@ -1,0 +1,11 @@
+node_modules/
+dist/
+coverage/
+
+# Écrit par npm, dans son propre format.
+package-lock.json
+
+# Régénéré par `npm run fetch`. Imposer le format de Prettier ferait échouer la CI
+# à chaque mise à jour de la composition de l'Assemblée, pour un fichier dont la
+# structure est déjà garantie par le schéma Zod.
+data/deputies.json

@@ -1,0 +1,70 @@
+# Contrôles de pull request. Voir CLAUDE.md §10.
+#
+# Cinq jobs en parallèle, plus un agrégateur : seul `CI` est déclaré « required »
+# dans les règles de branche, si bien qu'ajouter un contrôle plus tard ne demandera
+# pas de toucher aux réglages du dépôt.
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  format:
+    name: Format
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 24, cache: npm }
+      - run: npm ci
+      - run: npm run format:check
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 24, cache: npm }
+      - run: npm ci
+      - run: npm run lint
+
+  types:
+    name: Types
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 24, cache: npm }
+      - run: npm ci
+      - run: npm run typecheck
+
+  tests:
+    name: Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 24, cache: npm }
+      - run: npm ci
+      - run: npm run validate
+      - run: npm test
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 24, cache: npm }
+      - run: npm ci
+      - run: npm run build
+
+  ci:
+    name: CI
+    runs-on: ubuntu-latest
+    needs: [format, lint, types, tests, build]
+    steps:
+      - run: echo "Tous les contrôles sont passés."

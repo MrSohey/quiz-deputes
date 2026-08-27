@@ -1,0 +1,3549 @@
+{
+  "note": "Échelle de difficulté figée, établie le 2026-08-25. Ne pas recalculer : la notoriété dérive, mais une difficulté mouvante casserait la comparaison des scores et des défis partagés.",
+  "method": "Centile de la médiane mensuelle des consultations Wikipédia (poids 0,7) et centile du nombre de versions linguistiques (poids 0,3). Entrent d'office au niveau 1 : présidents de groupe, anciens ministres, dirigeants de parti, et députés totalisant quatre mandats ou plus.",
+  "sources": {
+    "pageviews": "wikimedia.org/api/rest_v1 — médiane mensuelle sur 2025-08 → 2026-07",
+    "languages": "Wikidata, nombre de liens de site par personne",
+    "ministers": "quiz-ministres/data/ministers.json, croisé par identifiant Wikidata",
+    "partyLeaders": "Wikidata, propriétés P488 (présidence) et P1308 (dirigeant)",
+    "mandates": "Assemblée nationale, AMO30 historique — législatures XI à XVII, soit depuis 1997 : les carrières antérieures sont sous-estimées"
+  },
+  "deputies": {
+    "793214": {
+      "level": 3,
+      "medianMonthlyViews": 427,
+      "languages": 2,
+      "mandates": 1
+    },
+    "795228": {
+      "level": 1,
+      "medianMonthlyViews": 3643,
+      "languages": 8,
+      "mandates": 2
+    },
+    "794278": {
+      "level": 3,
+      "medianMonthlyViews": 350,
+      "languages": 6,
+      "mandates": 2
+    },
+    "793262": {
+      "level": 2,
+      "medianMonthlyViews": 1028,
+      "languages": 4,
+      "mandates": 2
+    },
+    "793992": {
+      "level": 2,
+      "medianMonthlyViews": 848,
+      "languages": 4,
+      "mandates": 2
+    },
+    "841067": {
+      "level": 1,
+      "medianMonthlyViews": 3429,
+      "languages": 4,
+      "mandates": 1
+    },
+    "840665": {
+      "level": 3,
+      "medianMonthlyViews": 289,
+      "languages": 2,
+      "mandates": 1
+    },
+    "793432": {
+      "level": 1,
+      "medianMonthlyViews": 5314,
+      "languages": 6,
+      "mandates": 2
+    },
+    "841207": {
+      "level": 1,
+      "medianMonthlyViews": 32386,
+      "languages": 6,
+      "mandates": 1
+    },
+    "794906": {
+      "level": 1,
+      "medianMonthlyViews": 8365,
+      "languages": 4,
+      "mandates": 2
+    },
+    "841495": {
+      "level": 2,
+      "medianMonthlyViews": 1039,
+      "languages": 3,
+      "mandates": 1
+    },
+    "794138": {
+      "level": 2,
+      "medianMonthlyViews": 784,
+      "languages": 4,
+      "mandates": 2
+    },
+    "610968": {
+      "level": 1,
+      "medianMonthlyViews": 1907,
+      "languages": 5,
+      "mandates": 2
+    },
+    "795588": {
+      "level": 2,
+      "medianMonthlyViews": 1111,
+      "languages": 5,
+      "mandates": 2
+    },
+    "721158": {
+      "level": 2,
+      "medianMonthlyViews": 806,
+      "languages": 5,
+      "mandates": 3
+    },
+    "795084": {
+      "level": 2,
+      "medianMonthlyViews": 975,
+      "languages": 2,
+      "mandates": 2
+    },
+    "842105": {
+      "level": 1,
+      "medianMonthlyViews": 15885,
+      "languages": 6,
+      "mandates": 1
+    },
+    "793780": {
+      "level": 3,
+      "medianMonthlyViews": 468,
+      "languages": 4,
+      "mandates": 2
+    },
+    "722190": {
+      "level": 1,
+      "medianMonthlyViews": 67491,
+      "languages": 64,
+      "mandates": 3,
+      "reasons": ["president-groupe", "ancien-ministre", "chef-de-parti"]
+    },
+    "588884": {
+      "level": 1,
+      "medianMonthlyViews": 27173,
+      "languages": 16,
+      "mandates": 3
+    },
+    "796118": {
+      "level": 3,
+      "medianMonthlyViews": 273,
+      "languages": 4,
+      "mandates": 2
+    },
+    "642764": {
+      "level": 1,
+      "medianMonthlyViews": 253,
+      "languages": 4,
+      "mandates": 4,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "841701": {
+      "level": 2,
+      "medianMonthlyViews": 2233,
+      "languages": 4,
+      "mandates": 1
+    },
+    "719558": {
+      "level": 1,
+      "medianMonthlyViews": 1811,
+      "languages": 6,
+      "mandates": 3
+    },
+    "794562": {
+      "level": 2,
+      "medianMonthlyViews": 3440,
+      "languages": 3,
+      "mandates": 2
+    },
+    "842279": {
+      "level": 3,
+      "medianMonthlyViews": 429,
+      "languages": 4,
+      "mandates": 1
+    },
+    "720256": {
+      "level": 3,
+      "medianMonthlyViews": 254,
+      "languages": 3,
+      "mandates": 3
+    },
+    "643143": {
+      "level": 3,
+      "medianMonthlyViews": 392,
+      "languages": 3,
+      "mandates": 2
+    },
+    "368": {
+      "level": 1,
+      "medianMonthlyViews": 14094,
+      "languages": 61,
+      "mandates": 1,
+      "reasons": ["ancien-ministre"]
+    },
+    "840829": {
+      "level": 3,
+      "medianMonthlyViews": 300,
+      "languages": 4,
+      "mandates": 1
+    },
+    "267763": {
+      "level": 3,
+      "medianMonthlyViews": 447,
+      "languages": 3,
+      "mandates": 1
+    },
+    "335999": {
+      "level": 1,
+      "medianMonthlyViews": 4255,
+      "languages": 16,
+      "mandates": 5,
+      "reasons": ["ancien-ministre", "quatre-mandats-ou-plus"]
+    },
+    "342415": {
+      "level": 1,
+      "medianMonthlyViews": 384,
+      "languages": 6,
+      "mandates": 5,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "793374": {
+      "level": 3,
+      "medianMonthlyViews": 433,
+      "languages": 3,
+      "mandates": 2
+    },
+    "606793": {
+      "level": 2,
+      "medianMonthlyViews": 781,
+      "languages": 5,
+      "mandates": 2
+    },
+    "642847": {
+      "level": 2,
+      "medianMonthlyViews": 607,
+      "languages": 5,
+      "mandates": 3
+    },
+    "718884": {
+      "level": 3,
+      "medianMonthlyViews": 495,
+      "languages": 3,
+      "mandates": 3
+    },
+    "793158": {
+      "level": 3,
+      "medianMonthlyViews": 414,
+      "languages": 3,
+      "mandates": 2
+    },
+    "642935": {
+      "level": 1,
+      "medianMonthlyViews": 1097,
+      "languages": 5,
+      "mandates": 3,
+      "reasons": ["ancien-ministre"]
+    },
+    "720362": {
+      "level": 2,
+      "medianMonthlyViews": 941,
+      "languages": 3,
+      "mandates": 3
+    },
+    "842211": {
+      "level": 3,
+      "medianMonthlyViews": 503,
+      "languages": 3,
+      "mandates": 1
+    },
+    "795362": {
+      "level": 2,
+      "medianMonthlyViews": 466,
+      "languages": 5,
+      "mandates": 2
+    },
+    "841657": {
+      "level": 2,
+      "medianMonthlyViews": 1909,
+      "languages": 4,
+      "mandates": 1
+    },
+    "795454": {
+      "level": 3,
+      "medianMonthlyViews": 627,
+      "languages": 3,
+      "mandates": 2
+    },
+    "796106": {
+      "level": 3,
+      "medianMonthlyViews": 396,
+      "languages": 3,
+      "mandates": 2
+    },
+    "841315": {
+      "level": 3,
+      "medianMonthlyViews": 390,
+      "languages": 3,
+      "mandates": 1
+    },
+    "332228": {
+      "level": 1,
+      "medianMonthlyViews": 346,
+      "languages": 7,
+      "mandates": 5,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "841531": {
+      "level": 2,
+      "medianMonthlyViews": 1362,
+      "languages": 3,
+      "mandates": 1
+    },
+    "794434": {
+      "level": 3,
+      "medianMonthlyViews": 466,
+      "languages": 3,
+      "mandates": 2
+    },
+    "805166": {
+      "level": 3,
+      "medianMonthlyViews": 355,
+      "languages": 4,
+      "mandates": 2
+    },
+    "793924": {
+      "level": 3,
+      "medianMonthlyViews": 354,
+      "languages": 1,
+      "mandates": 1
+    },
+    "720430": {
+      "level": 1,
+      "medianMonthlyViews": 2289,
+      "languages": 5,
+      "mandates": 3
+    },
+    "841645": {
+      "level": 2,
+      "medianMonthlyViews": 543,
+      "languages": 4,
+      "mandates": 1
+    },
+    "687214": {
+      "level": 2,
+      "medianMonthlyViews": 769,
+      "languages": 5,
+      "mandates": 2
+    },
+    "309643": {
+      "level": 1,
+      "medianMonthlyViews": 1264,
+      "languages": 4,
+      "mandates": 5,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "793772": {
+      "level": 3,
+      "medianMonthlyViews": 549,
+      "languages": 3,
+      "mandates": 2
+    },
+    "842001": {
+      "level": 2,
+      "medianMonthlyViews": 1549,
+      "languages": 3,
+      "mandates": 1
+    },
+    "720822": {
+      "level": 2,
+      "medianMonthlyViews": 2389,
+      "languages": 4,
+      "mandates": 3
+    },
+    "795616": {
+      "level": 1,
+      "medianMonthlyViews": 1993,
+      "languages": 6,
+      "mandates": 2
+    },
+    "840997": {
+      "level": 1,
+      "medianMonthlyViews": 1911,
+      "languages": 9,
+      "mandates": 1
+    },
+    "720668": {
+      "level": 3,
+      "medianMonthlyViews": 466,
+      "languages": 3,
+      "mandates": 3
+    },
+    "794886": {
+      "level": 3,
+      "medianMonthlyViews": 296,
+      "languages": 3,
+      "mandates": 2
+    },
+    "842183": {
+      "level": 3,
+      "medianMonthlyViews": 229,
+      "languages": 2,
+      "mandates": 1
+    },
+    "719024": {
+      "level": 2,
+      "medianMonthlyViews": 1047,
+      "languages": 5,
+      "mandates": 3
+    },
+    "774954": {
+      "level": 3,
+      "medianMonthlyViews": 558,
+      "languages": 3,
+      "mandates": 3
+    },
+    "840889": {
+      "level": 2,
+      "medianMonthlyViews": 905,
+      "languages": 3,
+      "mandates": 1
+    },
+    "796042": {
+      "level": 2,
+      "medianMonthlyViews": 1546,
+      "languages": 3,
+      "mandates": 2
+    },
+    "841543": {
+      "level": 3,
+      "medianMonthlyViews": 230,
+      "languages": 2,
+      "mandates": 1
+    },
+    "793444": {
+      "level": 1,
+      "medianMonthlyViews": 32349,
+      "languages": 13,
+      "mandates": 2,
+      "reasons": ["chef-de-parti"]
+    },
+    "569": {
+      "level": 2,
+      "medianMonthlyViews": 836,
+      "languages": 5,
+      "mandates": 1
+    },
+    "794182": {
+      "level": 3,
+      "medianMonthlyViews": 87,
+      "languages": 1,
+      "mandates": 1
+    },
+    "841885": {
+      "level": 3,
+      "medianMonthlyViews": 448,
+      "languages": 3,
+      "mandates": 1
+    },
+    "841507": {
+      "level": 3,
+      "medianMonthlyViews": 461,
+      "languages": 3,
+      "mandates": 1
+    },
+    "719968": {
+      "level": 3,
+      "medianMonthlyViews": 368,
+      "languages": 4,
+      "mandates": 2
+    },
+    "721410": {
+      "level": 2,
+      "medianMonthlyViews": 727,
+      "languages": 4,
+      "mandates": 3
+    },
+    "266793": {
+      "level": 1,
+      "medianMonthlyViews": 226,
+      "languages": 4,
+      "mandates": 4,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "717161": {
+      "level": 1,
+      "medianMonthlyViews": 21264,
+      "languages": 66,
+      "mandates": 2,
+      "reasons": ["ancien-ministre"]
+    },
+    "642695": {
+      "level": 1,
+      "medianMonthlyViews": 843,
+      "languages": 5,
+      "mandates": 4,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "721816": {
+      "level": 3,
+      "medianMonthlyViews": 444,
+      "languages": 3,
+      "mandates": 3
+    },
+    "841487": {
+      "level": 3,
+      "medianMonthlyViews": 308,
+      "languages": 3,
+      "mandates": 1
+    },
+    "793528": {
+      "level": 3,
+      "medianMonthlyViews": 85,
+      "languages": 3,
+      "mandates": 2
+    },
+    "794094": {
+      "level": 3,
+      "medianMonthlyViews": 313,
+      "languages": 4,
+      "mandates": 2
+    },
+    "794938": {
+      "level": 2,
+      "medianMonthlyViews": 955,
+      "languages": 3,
+      "mandates": 2
+    },
+    "841131": {
+      "level": 2,
+      "medianMonthlyViews": 1046,
+      "languages": 3,
+      "mandates": 1
+    },
+    "342240": {
+      "level": 3,
+      "medianMonthlyViews": 269,
+      "languages": 4,
+      "mandates": 3
+    },
+    "720838": {
+      "level": 2,
+      "medianMonthlyViews": 624,
+      "languages": 4,
+      "mandates": 2
+    },
+    "719032": {
+      "level": 3,
+      "medianMonthlyViews": 268,
+      "languages": 3,
+      "mandates": 3
+    },
+    "793182": {
+      "level": 3,
+      "medianMonthlyViews": 286,
+      "languages": 3,
+      "mandates": 2
+    },
+    "795318": {
+      "level": 1,
+      "medianMonthlyViews": 14947,
+      "languages": 5,
+      "mandates": 2
+    },
+    "841339": {
+      "level": 3,
+      "medianMonthlyViews": 367,
+      "languages": 3,
+      "mandates": 1
+    },
+    "721908": {
+      "level": 1,
+      "medianMonthlyViews": 31956,
+      "languages": 31,
+      "mandates": 3,
+      "reasons": ["ancien-ministre"]
+    },
+    "840175": {
+      "level": 3,
+      "medianMonthlyViews": 687,
+      "languages": 2,
+      "mandates": 1
+    },
+    "330008": {
+      "level": 1,
+      "medianMonthlyViews": 644,
+      "languages": 6,
+      "mandates": 5,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "793508": {
+      "level": 3,
+      "medianMonthlyViews": 278,
+      "languages": 3,
+      "mandates": 2
+    },
+    "721336": {
+      "level": 3,
+      "medianMonthlyViews": 369,
+      "languages": 3,
+      "mandates": 3
+    },
+    "794330": {
+      "level": 3,
+      "medianMonthlyViews": 206,
+      "languages": 3,
+      "mandates": 2
+    },
+    "794710": {
+      "level": 3,
+      "medianMonthlyViews": 482,
+      "languages": 2,
+      "mandates": 1
+    },
+    "719890": {
+      "level": 2,
+      "medianMonthlyViews": 819,
+      "languages": 3,
+      "mandates": 3
+    },
+    "718838": {
+      "level": 3,
+      "medianMonthlyViews": 230,
+      "languages": 5,
+      "mandates": 3
+    },
+    "793624": {
+      "level": 2,
+      "medianMonthlyViews": 2699,
+      "languages": 4,
+      "mandates": 2
+    },
+    "840817": {
+      "level": 1,
+      "medianMonthlyViews": 1469,
+      "languages": 6,
+      "mandates": 1
+    },
+    "722000": {
+      "level": 3,
+      "medianMonthlyViews": 243,
+      "languages": 3,
+      "mandates": 3
+    },
+    "794798": {
+      "level": 3,
+      "medianMonthlyViews": 238,
+      "languages": 3,
+      "mandates": 2
+    },
+    "793134": {
+      "level": 3,
+      "medianMonthlyViews": 470,
+      "languages": 3,
+      "mandates": 2
+    },
+    "841023": {
+      "level": 2,
+      "medianMonthlyViews": 2048,
+      "languages": 4,
+      "mandates": 1
+    },
+    "795762": {
+      "level": 3,
+      "medianMonthlyViews": 164,
+      "languages": 3,
+      "mandates": 2
+    },
+    "721750": {
+      "level": 2,
+      "medianMonthlyViews": 1220,
+      "languages": 5,
+      "mandates": 3
+    },
+    "608264": {
+      "level": 2,
+      "medianMonthlyViews": 506,
+      "languages": 6,
+      "mandates": 2
+    },
+    "841973": {
+      "level": 2,
+      "medianMonthlyViews": 872,
+      "languages": 3,
+      "mandates": 1
+    },
+    "796090": {
+      "level": 1,
+      "medianMonthlyViews": 12221,
+      "languages": 7,
+      "mandates": 2,
+      "reasons": ["chef-de-parti"]
+    },
+    "793912": {
+      "level": 3,
+      "medianMonthlyViews": 377,
+      "languages": 3,
+      "mandates": 2
+    },
+    "841801": {
+      "level": 3,
+      "medianMonthlyViews": 242,
+      "languages": 2,
+      "mandates": 1
+    },
+    "719138": {
+      "level": 3,
+      "medianMonthlyViews": 325,
+      "languages": 6,
+      "mandates": 3
+    },
+    "840075": {
+      "level": 2,
+      "medianMonthlyViews": 663,
+      "languages": 4,
+      "mandates": 1
+    },
+    "795868": {
+      "level": 2,
+      "medianMonthlyViews": 581,
+      "languages": 6,
+      "mandates": 2
+    },
+    "842187": {
+      "level": 1,
+      "medianMonthlyViews": 6781,
+      "languages": 5,
+      "mandates": 1
+    },
+    "842311": {
+      "level": 3,
+      "medianMonthlyViews": 604,
+      "languages": 3,
+      "mandates": 1
+    },
+    "719922": {
+      "level": 3,
+      "medianMonthlyViews": 417,
+      "languages": 3,
+      "mandates": 3
+    },
+    "719472": {
+      "level": 1,
+      "medianMonthlyViews": 7416,
+      "languages": 7,
+      "mandates": 3
+    },
+    "795864": {
+      "level": 1,
+      "medianMonthlyViews": 37323,
+      "languages": 3,
+      "mandates": 2,
+      "reasons": ["chef-de-parti"]
+    },
+    "841047": {
+      "level": 3,
+      "medianMonthlyViews": 466,
+      "languages": 3,
+      "mandates": 1
+    },
+    "842037": {
+      "level": 2,
+      "medianMonthlyViews": 908,
+      "languages": 3,
+      "mandates": 1
+    },
+    "718820": {
+      "level": 3,
+      "medianMonthlyViews": 395,
+      "languages": 1,
+      "mandates": 1
+    },
+    "840701": {
+      "level": 2,
+      "medianMonthlyViews": 772,
+      "languages": 3,
+      "mandates": 1
+    },
+    "794008": {
+      "level": 1,
+      "medianMonthlyViews": 3318,
+      "languages": 6,
+      "mandates": 2,
+      "reasons": ["president-groupe"]
+    },
+    "840107": {
+      "level": 3,
+      "medianMonthlyViews": 312,
+      "languages": 2,
+      "mandates": 1
+    },
+    "840721": {
+      "level": 3,
+      "medianMonthlyViews": 410,
+      "languages": 3,
+      "mandates": 1
+    },
+    "841595": {
+      "level": 3,
+      "medianMonthlyViews": 390,
+      "languages": 2,
+      "mandates": 1
+    },
+    "795908": {
+      "level": 3,
+      "medianMonthlyViews": 469,
+      "languages": 3,
+      "mandates": 2
+    },
+    "720468": {
+      "level": 1,
+      "medianMonthlyViews": 16989,
+      "languages": 8,
+      "mandates": 3
+    },
+    "791812": {
+      "level": 1,
+      "medianMonthlyViews": 44639,
+      "languages": 6,
+      "mandates": 2
+    },
+    "840903": {
+      "level": 2,
+      "medianMonthlyViews": 888,
+      "languages": 3,
+      "mandates": 1
+    },
+    "794198": {
+      "level": 2,
+      "medianMonthlyViews": 905,
+      "languages": 4,
+      "mandates": 2
+    },
+    "330240": {
+      "level": 1,
+      "medianMonthlyViews": 23557,
+      "languages": 16,
+      "mandates": 5,
+      "reasons": ["president-groupe", "quatre-mandats-ou-plus"]
+    },
+    "840159": {
+      "level": 2,
+      "medianMonthlyViews": 1554,
+      "languages": 3,
+      "mandates": 1
+    },
+    "793736": {
+      "level": 1,
+      "medianMonthlyViews": 4700,
+      "languages": 4,
+      "mandates": 2
+    },
+    "795402": {
+      "level": 3,
+      "medianMonthlyViews": 487,
+      "languages": 3,
+      "mandates": 1
+    },
+    "841431": {
+      "level": 2,
+      "medianMonthlyViews": 663,
+      "languages": 10,
+      "mandates": 1
+    },
+    "719286": {
+      "level": 3,
+      "medianMonthlyViews": 358,
+      "languages": 3,
+      "mandates": 3
+    },
+    "793548": {
+      "level": 3,
+      "medianMonthlyViews": 380,
+      "languages": 4,
+      "mandates": 2
+    },
+    "721202": {
+      "level": 1,
+      "medianMonthlyViews": 14800,
+      "languages": 4,
+      "mandates": 3,
+      "reasons": ["chef-de-parti"]
+    },
+    "721210": {
+      "level": 1,
+      "medianMonthlyViews": 8698,
+      "languages": 7,
+      "mandates": 3
+    },
+    "718850": {
+      "level": 3,
+      "medianMonthlyViews": 303,
+      "languages": 3,
+      "mandates": 3
+    },
+    "719118": {
+      "level": 3,
+      "medianMonthlyViews": 393,
+      "languages": 3,
+      "mandates": 3
+    },
+    "722390": {
+      "level": 3,
+      "medianMonthlyViews": 430,
+      "languages": 3,
+      "mandates": 3
+    },
+    "793520": {
+      "level": 3,
+      "medianMonthlyViews": 284,
+      "languages": 3,
+      "mandates": 2
+    },
+    "795136": {
+      "level": 2,
+      "medianMonthlyViews": 504,
+      "languages": 4,
+      "mandates": 2
+    },
+    "841295": {
+      "level": 3,
+      "medianMonthlyViews": 581,
+      "languages": 3,
+      "mandates": 1
+    },
+    "794430": {
+      "level": 3,
+      "medianMonthlyViews": 295,
+      "languages": 2,
+      "mandates": 1
+    },
+    "793716": {
+      "level": 3,
+      "medianMonthlyViews": 310,
+      "languages": 3,
+      "mandates": 2
+    },
+    "793322": {
+      "level": 2,
+      "medianMonthlyViews": 1516,
+      "languages": 4,
+      "mandates": 2
+    },
+    "795644": {
+      "level": 3,
+      "medianMonthlyViews": 347,
+      "languages": 3,
+      "mandates": 2
+    },
+    "332523": {
+      "level": 1,
+      "medianMonthlyViews": 314,
+      "languages": 4,
+      "mandates": 5,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "719914": {
+      "level": 1,
+      "medianMonthlyViews": 1841,
+      "languages": 11,
+      "mandates": 3,
+      "reasons": ["ancien-ministre"]
+    },
+    "793122": {
+      "level": 2,
+      "medianMonthlyViews": 444,
+      "languages": 6,
+      "mandates": 2
+    },
+    "793452": {
+      "level": 2,
+      "medianMonthlyViews": 1723,
+      "languages": 3,
+      "mandates": 2
+    },
+    "1008": {
+      "level": 3,
+      "medianMonthlyViews": 259,
+      "languages": 4,
+      "mandates": 3
+    },
+    "942": {
+      "level": 1,
+      "medianMonthlyViews": 5526,
+      "languages": 10,
+      "mandates": 6,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "841613": {
+      "level": 2,
+      "medianMonthlyViews": 780,
+      "languages": 4,
+      "mandates": 1
+    },
+    "642988": {
+      "level": 2,
+      "medianMonthlyViews": 1090,
+      "languages": 4,
+      "mandates": 2
+    },
+    "842141": {
+      "level": 3,
+      "medianMonthlyViews": 584,
+      "languages": 3,
+      "mandates": 1
+    },
+    "841359": {
+      "level": 2,
+      "medianMonthlyViews": 1833,
+      "languages": 4,
+      "mandates": 1
+    },
+    "840119": {
+      "level": 3,
+      "medianMonthlyViews": 372,
+      "languages": 4,
+      "mandates": 1
+    },
+    "793394": {
+      "level": 2,
+      "medianMonthlyViews": 2054,
+      "languages": 3,
+      "mandates": 2
+    },
+    "795430": {
+      "level": 3,
+      "medianMonthlyViews": 309,
+      "languages": 3,
+      "mandates": 2
+    },
+    "841059": {
+      "level": 3,
+      "medianMonthlyViews": 356,
+      "languages": 2,
+      "mandates": 1
+    },
+    "793464": {
+      "level": 1,
+      "medianMonthlyViews": 28877,
+      "languages": 6,
+      "mandates": 2
+    },
+    "794982": {
+      "level": 3,
+      "medianMonthlyViews": 281,
+      "languages": 3,
+      "mandates": 2
+    },
+    "330909": {
+      "level": 1,
+      "medianMonthlyViews": 212,
+      "languages": 4,
+      "mandates": 4,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "793166": {
+      "level": 3,
+      "medianMonthlyViews": 390,
+      "languages": 3,
+      "mandates": 2
+    },
+    "793928": {
+      "level": 1,
+      "medianMonthlyViews": 5990,
+      "languages": 10,
+      "mandates": 2
+    },
+    "841919": {
+      "level": 2,
+      "medianMonthlyViews": 843,
+      "languages": 5,
+      "mandates": 1
+    },
+    "842155": {
+      "level": 2,
+      "medianMonthlyViews": 4655,
+      "languages": 3,
+      "mandates": 1
+    },
+    "722382": {
+      "level": 3,
+      "medianMonthlyViews": 258,
+      "languages": 4,
+      "mandates": 3
+    },
+    "712015": {
+      "level": 1,
+      "medianMonthlyViews": 1287,
+      "languages": 6,
+      "mandates": 4,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "794762": {
+      "level": 3,
+      "medianMonthlyViews": 196,
+      "languages": 4,
+      "mandates": 2
+    },
+    "606573": {
+      "level": 3,
+      "medianMonthlyViews": 287,
+      "languages": 4,
+      "mandates": 2
+    },
+    "793146": {
+      "level": 3,
+      "medianMonthlyViews": 394,
+      "languages": 4,
+      "mandates": 2
+    },
+    "720154": {
+      "level": 3,
+      "medianMonthlyViews": 292,
+      "languages": 4,
+      "mandates": 3
+    },
+    "608826": {
+      "level": 1,
+      "medianMonthlyViews": 771,
+      "languages": 4,
+      "mandates": 4,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "841633": {
+      "level": 2,
+      "medianMonthlyViews": 827,
+      "languages": 6,
+      "mandates": 1
+    },
+    "840135": {
+      "level": 3,
+      "medianMonthlyViews": 320,
+      "languages": 3,
+      "mandates": 1
+    },
+    "795200": {
+      "level": 1,
+      "medianMonthlyViews": 9494,
+      "languages": 7,
+      "mandates": 2
+    },
+    "870009": {
+      "level": 3,
+      "medianMonthlyViews": 444,
+      "languages": 2,
+      "mandates": 1
+    },
+    "841351": {
+      "level": 3,
+      "medianMonthlyViews": 533,
+      "languages": 3,
+      "mandates": 1
+    },
+    "643175": {
+      "level": 2,
+      "medianMonthlyViews": 931,
+      "languages": 6,
+      "mandates": 3
+    },
+    "842073": {
+      "level": 1,
+      "medianMonthlyViews": 1966,
+      "languages": 6,
+      "mandates": 1
+    },
+    "841761": {
+      "level": 3,
+      "medianMonthlyViews": 345,
+      "languages": 3,
+      "mandates": 1
+    },
+    "794854": {
+      "level": 2,
+      "medianMonthlyViews": 808,
+      "languages": 5,
+      "mandates": 2
+    },
+    "720390": {
+      "level": 3,
+      "medianMonthlyViews": 480,
+      "languages": 2,
+      "mandates": 1
+    },
+    "794718": {
+      "level": 2,
+      "medianMonthlyViews": 1167,
+      "languages": 3,
+      "mandates": 2
+    },
+    "795844": {
+      "level": 3,
+      "medianMonthlyViews": 334,
+      "languages": 4,
+      "mandates": 2
+    },
+    "607193": {
+      "level": 1,
+      "medianMonthlyViews": 355,
+      "languages": 6,
+      "mandates": 4,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "842195": {
+      "level": 2,
+      "medianMonthlyViews": 1620,
+      "languages": 3,
+      "mandates": 1
+    },
+    "841621": {
+      "level": 3,
+      "medianMonthlyViews": 339,
+      "languages": 3,
+      "mandates": 1
+    },
+    "794658": {
+      "level": 3,
+      "medianMonthlyViews": 317,
+      "languages": 3,
+      "mandates": 2
+    },
+    "793246": {
+      "level": 2,
+      "medianMonthlyViews": 700,
+      "languages": 3,
+      "mandates": 2
+    },
+    "721896": {
+      "level": 2,
+      "medianMonthlyViews": 1698,
+      "languages": 4,
+      "mandates": 3
+    },
+    "609332": {
+      "level": 1,
+      "medianMonthlyViews": 147,
+      "languages": 19,
+      "mandates": 4,
+      "reasons": ["chef-de-parti", "quatre-mandats-ou-plus"]
+    },
+    "267042": {
+      "level": 1,
+      "medianMonthlyViews": 378,
+      "languages": 5,
+      "mandates": 6,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "840773": {
+      "level": 3,
+      "medianMonthlyViews": 378,
+      "languages": 4,
+      "mandates": 1
+    },
+    "841665": {
+      "level": 3,
+      "medianMonthlyViews": 181,
+      "languages": 3,
+      "mandates": 1
+    },
+    "841251": {
+      "level": 3,
+      "medianMonthlyViews": 625,
+      "languages": 3,
+      "mandates": 1
+    },
+    "794786": {
+      "level": 2,
+      "medianMonthlyViews": 619,
+      "languages": 6,
+      "mandates": 2
+    },
+    "795884": {
+      "level": 1,
+      "medianMonthlyViews": 3948,
+      "languages": 7,
+      "mandates": 2
+    },
+    "794870": {
+      "level": 3,
+      "medianMonthlyViews": 339,
+      "languages": 4,
+      "mandates": 2
+    },
+    "719938": {
+      "level": 1,
+      "medianMonthlyViews": 2893,
+      "languages": 9,
+      "mandates": 3,
+      "reasons": ["president-groupe", "ancien-ministre"]
+    },
+    "722134": {
+      "level": 3,
+      "medianMonthlyViews": 226,
+      "languages": 3,
+      "mandates": 3
+    },
+    "267780": {
+      "level": 1,
+      "medianMonthlyViews": 1335,
+      "languages": 9,
+      "mandates": 3,
+      "reasons": ["ancien-ministre"]
+    },
+    "840143": {
+      "level": 3,
+      "medianMonthlyViews": 508,
+      "languages": 3,
+      "mandates": 1
+    },
+    "840801": {
+      "level": 3,
+      "medianMonthlyViews": 312,
+      "languages": 3,
+      "mandates": 1
+    },
+    "793980": {
+      "level": 3,
+      "medianMonthlyViews": 514,
+      "languages": 3,
+      "mandates": 2
+    },
+    "794678": {
+      "level": 3,
+      "medianMonthlyViews": 232,
+      "languages": 3,
+      "mandates": 2
+    },
+    "840235": {
+      "level": 3,
+      "medianMonthlyViews": 280,
+      "languages": 3,
+      "mandates": 1
+    },
+    "822617": {
+      "level": 2,
+      "medianMonthlyViews": 473,
+      "languages": 5,
+      "mandates": 2
+    },
+    "841151": {
+      "level": 3,
+      "medianMonthlyViews": 653,
+      "languages": 3,
+      "mandates": 1
+    },
+    "722284": {
+      "level": 2,
+      "medianMonthlyViews": 991,
+      "languages": 6,
+      "mandates": 3
+    },
+    "722366": {
+      "level": 2,
+      "medianMonthlyViews": 531,
+      "languages": 4,
+      "mandates": 3
+    },
+    "841139": {
+      "level": 3,
+      "medianMonthlyViews": 592,
+      "languages": 3,
+      "mandates": 1
+    },
+    "796070": {
+      "level": 3,
+      "medianMonthlyViews": 247,
+      "languages": 4,
+      "mandates": 2
+    },
+    "793892": {
+      "level": 3,
+      "medianMonthlyViews": 372,
+      "languages": 3,
+      "mandates": 2
+    },
+    "795010": {
+      "level": 2,
+      "medianMonthlyViews": 2070,
+      "languages": 4,
+      "mandates": 2
+    },
+    "333285": {
+      "level": 1,
+      "medianMonthlyViews": 1084,
+      "languages": 5,
+      "mandates": 5,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "722358": {
+      "level": 3,
+      "medianMonthlyViews": 349,
+      "languages": 3,
+      "mandates": 3
+    },
+    "721024": {
+      "level": 1,
+      "medianMonthlyViews": 2670,
+      "languages": 8,
+      "mandates": 3,
+      "reasons": ["ancien-ministre"]
+    },
+    "794470": {
+      "level": 3,
+      "medianMonthlyViews": 295,
+      "languages": 3,
+      "mandates": 2
+    },
+    "794234": {
+      "level": 3,
+      "medianMonthlyViews": 265,
+      "languages": 4,
+      "mandates": 2
+    },
+    "793556": {
+      "level": 3,
+      "medianMonthlyViews": 557,
+      "languages": 2,
+      "mandates": 1
+    },
+    "841737": {
+      "level": 3,
+      "medianMonthlyViews": 274,
+      "languages": 3,
+      "mandates": 1
+    },
+    "796034": {
+      "level": 3,
+      "medianMonthlyViews": 414,
+      "languages": 3,
+      "mandates": 2
+    },
+    "793832": {
+      "level": 2,
+      "medianMonthlyViews": 1262,
+      "languages": 3,
+      "mandates": 2
+    },
+    "793102": {
+      "level": 3,
+      "medianMonthlyViews": 251,
+      "languages": 3,
+      "mandates": 2
+    },
+    "841419": {
+      "level": 3,
+      "medianMonthlyViews": 646,
+      "languages": 2,
+      "mandates": 1
+    },
+    "718674": {
+      "level": 2,
+      "medianMonthlyViews": 1140,
+      "languages": 3,
+      "mandates": 3
+    },
+    "840939": {
+      "level": 2,
+      "medianMonthlyViews": 784,
+      "languages": 4,
+      "mandates": 1
+    },
+    "841605": {
+      "level": 3,
+      "medianMonthlyViews": 303,
+      "languages": 3,
+      "mandates": 1
+    },
+    "793362": {
+      "level": 3,
+      "medianMonthlyViews": 595,
+      "languages": 3,
+      "mandates": 2
+    },
+    "266797": {
+      "level": 1,
+      "medianMonthlyViews": 613,
+      "languages": 6,
+      "mandates": 5,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "331973": {
+      "level": 3,
+      "medianMonthlyViews": 383,
+      "languages": 3,
+      "mandates": 3
+    },
+    "721296": {
+      "level": 3,
+      "medianMonthlyViews": 451,
+      "languages": 3,
+      "mandates": 3
+    },
+    "794418": {
+      "level": 3,
+      "medianMonthlyViews": 435,
+      "languages": 3,
+      "mandates": 2
+    },
+    "720560": {
+      "level": 2,
+      "medianMonthlyViews": 1026,
+      "languages": 4,
+      "mandates": 3
+    },
+    "793592": {
+      "level": 3,
+      "medianMonthlyViews": 347,
+      "languages": 3,
+      "mandates": 2
+    },
+    "721764": {
+      "level": 1,
+      "medianMonthlyViews": 4046,
+      "languages": 9,
+      "mandates": 3,
+      "reasons": ["ancien-ministre"]
+    },
+    "267318": {
+      "level": 3,
+      "medianMonthlyViews": 291,
+      "languages": 4,
+      "mandates": 3
+    },
+    "795540": {
+      "level": 2,
+      "medianMonthlyViews": 720,
+      "languages": 3,
+      "mandates": 2
+    },
+    "840757": {
+      "level": 3,
+      "medianMonthlyViews": 405,
+      "languages": 3,
+      "mandates": 1
+    },
+    "794058": {
+      "level": 2,
+      "medianMonthlyViews": 751,
+      "languages": 4,
+      "mandates": 2
+    },
+    "1567": {
+      "level": 1,
+      "medianMonthlyViews": 11254,
+      "languages": 4,
+      "mandates": 4,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "795310": {
+      "level": 1,
+      "medianMonthlyViews": 33313,
+      "languages": 11,
+      "mandates": 2
+    },
+    "841451": {
+      "level": 3,
+      "medianMonthlyViews": 277,
+      "languages": 3,
+      "mandates": 1
+    },
+    "721612": {
+      "level": 3,
+      "medianMonthlyViews": 629,
+      "languages": 2,
+      "mandates": 1
+    },
+    "794734": {
+      "level": 3,
+      "medianMonthlyViews": 342,
+      "languages": 3,
+      "mandates": 2
+    },
+    "793218": {
+      "level": 3,
+      "medianMonthlyViews": 465,
+      "languages": 3,
+      "mandates": 2
+    },
+    "795258": {
+      "level": 3,
+      "medianMonthlyViews": 235,
+      "languages": 4,
+      "mandates": 2
+    },
+    "842013": {
+      "level": 2,
+      "medianMonthlyViews": 1051,
+      "languages": 3,
+      "mandates": 1
+    },
+    "1592": {
+      "level": 1,
+      "medianMonthlyViews": 869,
+      "languages": 6,
+      "mandates": 6,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "841471": {
+      "level": 3,
+      "medianMonthlyViews": 550,
+      "languages": 2,
+      "mandates": 1
+    },
+    "842263": {
+      "level": 1,
+      "medianMonthlyViews": 4163,
+      "languages": 5,
+      "mandates": 1
+    },
+    "841947": {
+      "level": 3,
+      "medianMonthlyViews": 509,
+      "languages": 3,
+      "mandates": 1
+    },
+    "795900": {
+      "level": 3,
+      "medianMonthlyViews": 411,
+      "languages": 4,
+      "mandates": 2
+    },
+    "722070": {
+      "level": 2,
+      "medianMonthlyViews": 579,
+      "languages": 4,
+      "mandates": 3
+    },
+    "1630": {
+      "level": 1,
+      "medianMonthlyViews": 472,
+      "languages": 7,
+      "mandates": 6,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "841813": {
+      "level": 3,
+      "medianMonthlyViews": 407,
+      "languages": 3,
+      "mandates": 1
+    },
+    "840947": {
+      "level": 3,
+      "medianMonthlyViews": 339,
+      "languages": 3,
+      "mandates": 1
+    },
+    "841853": {
+      "level": 2,
+      "medianMonthlyViews": 1761,
+      "languages": 4,
+      "mandates": 1
+    },
+    "608416": {
+      "level": 1,
+      "medianMonthlyViews": 1062,
+      "languages": 8,
+      "mandates": 4,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "794082": {
+      "level": 2,
+      "medianMonthlyViews": 792,
+      "languages": 6,
+      "mandates": 2
+    },
+    "841709": {
+      "level": 3,
+      "medianMonthlyViews": 426,
+      "languages": 2,
+      "mandates": 1
+    },
+    "1654": {
+      "level": 1,
+      "medianMonthlyViews": 39874,
+      "languages": 218,
+      "mandates": 3
+    },
+    "722150": {
+      "level": 2,
+      "medianMonthlyViews": 2433,
+      "languages": 4,
+      "mandates": 3
+    },
+    "793632": {
+      "level": 3,
+      "medianMonthlyViews": 447,
+      "languages": 4,
+      "mandates": 2
+    },
+    "842085": {
+      "level": 3,
+      "medianMonthlyViews": 225,
+      "languages": 3,
+      "mandates": 1
+    },
+    "841017": {
+      "level": 2,
+      "medianMonthlyViews": 1240,
+      "languages": 3,
+      "mandates": 1
+    },
+    "267200": {
+      "level": 1,
+      "medianMonthlyViews": 796,
+      "languages": 6,
+      "mandates": 5,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "795954": {
+      "level": 3,
+      "medianMonthlyViews": 563,
+      "languages": 2,
+      "mandates": 1
+    },
+    "794022": {
+      "level": 3,
+      "medianMonthlyViews": 569,
+      "languages": 3,
+      "mandates": 2
+    },
+    "722374": {
+      "level": 3,
+      "medianMonthlyViews": 413,
+      "languages": 5,
+      "mandates": 3
+    },
+    "794598": {
+      "level": 1,
+      "medianMonthlyViews": 8448,
+      "languages": 4,
+      "mandates": 2
+    },
+    "720354": {
+      "level": 2,
+      "medianMonthlyViews": 651,
+      "languages": 5,
+      "mandates": 3
+    },
+    "841439": {
+      "level": 3,
+      "medianMonthlyViews": 286,
+      "languages": 2,
+      "mandates": 1
+    },
+    "719778": {
+      "level": 3,
+      "medianMonthlyViews": 398,
+      "languages": 3,
+      "mandates": 3
+    },
+    "794030": {
+      "level": 3,
+      "medianMonthlyViews": 418,
+      "languages": 3,
+      "mandates": 2
+    },
+    "841749": {
+      "level": 2,
+      "medianMonthlyViews": 747,
+      "languages": 4,
+      "mandates": 1
+    },
+    "840745": {
+      "level": 3,
+      "medianMonthlyViews": 747,
+      "languages": 2,
+      "mandates": 1
+    },
+    "841075": {
+      "level": 2,
+      "medianMonthlyViews": 451,
+      "languages": 8,
+      "mandates": 1
+    },
+    "720038": {
+      "level": 1,
+      "medianMonthlyViews": 2197,
+      "languages": 8,
+      "mandates": 3
+    },
+    "840869": {
+      "level": 3,
+      "medianMonthlyViews": 259,
+      "languages": 3,
+      "mandates": 1
+    },
+    "643192": {
+      "level": 3,
+      "medianMonthlyViews": 278,
+      "languages": 4,
+      "mandates": 3
+    },
+    "346782": {
+      "level": 1,
+      "medianMonthlyViews": 5516,
+      "languages": 8,
+      "mandates": 2
+    },
+    "795998": {
+      "level": 2,
+      "medianMonthlyViews": 1119,
+      "languages": 4,
+      "mandates": 2
+    },
+    "335054": {
+      "level": 1,
+      "medianMonthlyViews": 514,
+      "languages": 5,
+      "mandates": 5,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "719372": {
+      "level": 1,
+      "medianMonthlyViews": 7353,
+      "languages": 7,
+      "mandates": 3
+    },
+    "795156": {
+      "level": 2,
+      "medianMonthlyViews": 814,
+      "languages": 3,
+      "mandates": 2
+    },
+    "794130": {
+      "level": 1,
+      "medianMonthlyViews": 2612,
+      "languages": 5,
+      "mandates": 2
+    },
+    "719052": {
+      "level": 2,
+      "medianMonthlyViews": 487,
+      "languages": 4,
+      "mandates": 3
+    },
+    "643184": {
+      "level": 1,
+      "medianMonthlyViews": 1466,
+      "languages": 5,
+      "mandates": 3,
+      "reasons": ["ancien-ministre"]
+    },
+    "719798": {
+      "level": 3,
+      "medianMonthlyViews": 415,
+      "languages": 4,
+      "mandates": 3
+    },
+    "720846": {
+      "level": 1,
+      "medianMonthlyViews": 7324,
+      "languages": 7,
+      "mandates": 3
+    },
+    "794146": {
+      "level": 3,
+      "medianMonthlyViews": 361,
+      "languages": 4,
+      "mandates": 2
+    },
+    "841223": {
+      "level": 3,
+      "medianMonthlyViews": 440,
+      "languages": 3,
+      "mandates": 1
+    },
+    "841729": {
+      "level": 2,
+      "medianMonthlyViews": 1731,
+      "languages": 4,
+      "mandates": 1
+    },
+    "795516": {
+      "level": 3,
+      "medianMonthlyViews": 376,
+      "languages": 3,
+      "mandates": 2
+    },
+    "721004": {
+      "level": 2,
+      "medianMonthlyViews": 520,
+      "languages": 4,
+      "mandates": 3
+    },
+    "795390": {
+      "level": 3,
+      "medianMonthlyViews": 342,
+      "languages": 2,
+      "mandates": 1
+    },
+    "842125": {
+      "level": 3,
+      "medianMonthlyViews": 445,
+      "languages": 3,
+      "mandates": 1
+    },
+    "794354": {
+      "level": 1,
+      "medianMonthlyViews": 2704,
+      "languages": 15,
+      "mandates": 2
+    },
+    "795334": {
+      "level": 3,
+      "medianMonthlyViews": 406,
+      "languages": 3,
+      "mandates": 1
+    },
+    "721984": {
+      "level": 3,
+      "medianMonthlyViews": 559,
+      "languages": 3,
+      "mandates": 3
+    },
+    "857021": {
+      "level": 3,
+      "medianMonthlyViews": 358,
+      "languages": 4,
+      "mandates": 1
+    },
+    "720022": {
+      "level": 3,
+      "medianMonthlyViews": 195,
+      "languages": 3,
+      "mandates": 3
+    },
+    "795912": {
+      "level": 1,
+      "medianMonthlyViews": 10232,
+      "languages": 6,
+      "mandates": 2
+    },
+    "841837": {
+      "level": 3,
+      "medianMonthlyViews": 333,
+      "languages": 3,
+      "mandates": 1
+    },
+    "841515": {
+      "level": 2,
+      "medianMonthlyViews": 2136,
+      "languages": 3,
+      "mandates": 1
+    },
+    "719412": {
+      "level": 2,
+      "medianMonthlyViews": 835,
+      "languages": 3,
+      "mandates": 3
+    },
+    "840979": {
+      "level": 2,
+      "medianMonthlyViews": 707,
+      "languages": 3,
+      "mandates": 1
+    },
+    "719404": {
+      "level": 3,
+      "medianMonthlyViews": 299,
+      "languages": 4,
+      "mandates": 3
+    },
+    "795672": {
+      "level": 2,
+      "medianMonthlyViews": 545,
+      "languages": 4,
+      "mandates": 2
+    },
+    "345722": {
+      "level": 2,
+      "medianMonthlyViews": 786,
+      "languages": 6,
+      "mandates": 3
+    },
+    "719388": {
+      "level": 2,
+      "medianMonthlyViews": 590,
+      "languages": 6,
+      "mandates": 3
+    },
+    "719756": {
+      "level": 3,
+      "medianMonthlyViews": 289,
+      "languages": 6,
+      "mandates": 3
+    },
+    "720342": {
+      "level": 3,
+      "medianMonthlyViews": 274,
+      "languages": 5,
+      "mandates": 3
+    },
+    "720614": {
+      "level": 1,
+      "medianMonthlyViews": 43708,
+      "languages": 117,
+      "mandates": 3,
+      "reasons": ["president-groupe", "chef-de-parti"]
+    },
+    "795746": {
+      "level": 1,
+      "medianMonthlyViews": 13155,
+      "languages": 4,
+      "mandates": 2
+    },
+    "721852": {
+      "level": 1,
+      "medianMonthlyViews": 1608,
+      "languages": 8,
+      "mandates": 3,
+      "reasons": ["ancien-ministre"]
+    },
+    "774962": {
+      "level": 2,
+      "medianMonthlyViews": 562,
+      "languages": 5,
+      "mandates": 3
+    },
+    "795108": {
+      "level": 2,
+      "medianMonthlyViews": 496,
+      "languages": 6,
+      "mandates": 2
+    },
+    "795374": {
+      "level": 3,
+      "medianMonthlyViews": 236,
+      "languages": 3,
+      "mandates": 2
+    },
+    "796026": {
+      "level": 1,
+      "medianMonthlyViews": 1620,
+      "languages": 7,
+      "mandates": 2
+    },
+    "840857": {
+      "level": 3,
+      "medianMonthlyViews": 242,
+      "languages": 4,
+      "mandates": 1
+    },
+    "335612": {
+      "level": 1,
+      "medianMonthlyViews": 910,
+      "languages": 6,
+      "mandates": 4,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "712014": {
+      "level": 1,
+      "medianMonthlyViews": 492,
+      "languages": 6,
+      "mandates": 4,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "795298": {
+      "level": 2,
+      "medianMonthlyViews": 987,
+      "languages": 4,
+      "mandates": 2
+    },
+    "791824": {
+      "level": 1,
+      "medianMonthlyViews": 2964,
+      "languages": 5,
+      "mandates": 2
+    },
+    "842029": {
+      "level": 1,
+      "medianMonthlyViews": 3567,
+      "languages": 5,
+      "mandates": 1
+    },
+    "793290": {
+      "level": 3,
+      "medianMonthlyViews": 317,
+      "languages": 4,
+      "mandates": 2
+    },
+    "794838": {
+      "level": 3,
+      "medianMonthlyViews": 295,
+      "languages": 4,
+      "mandates": 2
+    },
+    "721632": {
+      "level": 3,
+      "medianMonthlyViews": 202,
+      "languages": 4,
+      "mandates": 3
+    },
+    "840983": {
+      "level": 2,
+      "medianMonthlyViews": 1080,
+      "languages": 3,
+      "mandates": 1
+    },
+    "795244": {
+      "level": 2,
+      "medianMonthlyViews": 510,
+      "languages": 5,
+      "mandates": 2
+    },
+    "793532": {
+      "level": 3,
+      "medianMonthlyViews": 329,
+      "languages": 4,
+      "mandates": 2
+    },
+    "774958": {
+      "level": 3,
+      "medianMonthlyViews": 282,
+      "languages": 3,
+      "mandates": 3
+    },
+    "227089": {
+      "level": 1,
+      "medianMonthlyViews": 1679,
+      "languages": 10,
+      "mandates": 1
+    },
+    "793608": {
+      "level": 3,
+      "medianMonthlyViews": 283,
+      "languages": 3,
+      "mandates": 2
+    },
+    "840765": {
+      "level": 3,
+      "medianMonthlyViews": 318,
+      "languages": 3,
+      "mandates": 1
+    },
+    "642725": {
+      "level": 3,
+      "medianMonthlyViews": 207,
+      "languages": 2,
+      "mandates": 1
+    },
+    "794750": {
+      "level": 3,
+      "medianMonthlyViews": 209,
+      "languages": 2,
+      "mandates": 1
+    },
+    "841873": {
+      "level": 2,
+      "medianMonthlyViews": 661,
+      "languages": 3,
+      "mandates": 1
+    },
+    "794702": {
+      "level": 3,
+      "medianMonthlyViews": 527,
+      "languages": 3,
+      "mandates": 2
+    },
+    "840967": {
+      "level": 3,
+      "medianMonthlyViews": 359,
+      "languages": 3,
+      "mandates": 1
+    },
+    "720446": {
+      "level": 3,
+      "medianMonthlyViews": 258,
+      "languages": 5,
+      "mandates": 3
+    },
+    "793672": {
+      "level": 3,
+      "medianMonthlyViews": 251,
+      "languages": 3,
+      "mandates": 2
+    },
+    "721932": {
+      "level": 2,
+      "medianMonthlyViews": 736,
+      "languages": 4,
+      "mandates": 3
+    },
+    "795974": {
+      "level": 3,
+      "medianMonthlyViews": 554,
+      "languages": 3,
+      "mandates": 2
+    },
+    "794590": {
+      "level": 2,
+      "medianMonthlyViews": 1391,
+      "languages": 3,
+      "mandates": 2
+    },
+    "879389": {
+      "level": 3,
+      "medianMonthlyViews": 570,
+      "languages": 2,
+      "mandates": 1
+    },
+    "795636": {
+      "level": 1,
+      "medianMonthlyViews": 2775,
+      "languages": 6,
+      "mandates": 2
+    },
+    "794578": {
+      "level": 3,
+      "medianMonthlyViews": 474,
+      "languages": 2,
+      "mandates": 1
+    },
+    "841587": {
+      "level": 3,
+      "medianMonthlyViews": 290,
+      "languages": 3,
+      "mandates": 1
+    },
+    "720230": {
+      "level": 3,
+      "medianMonthlyViews": 320,
+      "languages": 4,
+      "mandates": 3
+    },
+    "717379": {
+      "level": 2,
+      "medianMonthlyViews": 2476,
+      "languages": 3,
+      "mandates": 3
+    },
+    "796010": {
+      "level": 3,
+      "medianMonthlyViews": 530,
+      "languages": 3,
+      "mandates": 2
+    },
+    "794114": {
+      "level": 3,
+      "medianMonthlyViews": 386,
+      "languages": 3,
+      "mandates": 2
+    },
+    "841183": {
+      "level": 1,
+      "medianMonthlyViews": 4230,
+      "languages": 5,
+      "mandates": 1
+    },
+    "841563": {
+      "level": 3,
+      "medianMonthlyViews": 461,
+      "languages": 3,
+      "mandates": 1
+    },
+    "605782": {
+      "level": 1,
+      "medianMonthlyViews": 1929,
+      "languages": 8,
+      "mandates": 3,
+      "reasons": ["president-groupe"]
+    },
+    "794530": {
+      "level": 3,
+      "medianMonthlyViews": 337,
+      "languages": 3,
+      "mandates": 2
+    },
+    "795730": {
+      "level": 3,
+      "medianMonthlyViews": 453,
+      "languages": 3,
+      "mandates": 2
+    },
+    "794206": {
+      "level": 3,
+      "medianMonthlyViews": 446,
+      "languages": 3,
+      "mandates": 2
+    },
+    "840837": {
+      "level": 3,
+      "medianMonthlyViews": 397,
+      "languages": 3,
+      "mandates": 1
+    },
+    "794518": {
+      "level": 3,
+      "medianMonthlyViews": 74,
+      "languages": 2,
+      "mandates": 1
+    },
+    "719080": {
+      "level": 3,
+      "medianMonthlyViews": 267,
+      "languages": 4,
+      "mandates": 3
+    },
+    "793342": {
+      "level": 2,
+      "medianMonthlyViews": 936,
+      "languages": 3,
+      "mandates": 2
+    },
+    "793944": {
+      "level": 3,
+      "medianMonthlyViews": 215,
+      "languages": 3,
+      "mandates": 2
+    },
+    "342384": {
+      "level": 2,
+      "medianMonthlyViews": 600,
+      "languages": 5,
+      "mandates": 2
+    },
+    "841825": {
+      "level": 3,
+      "medianMonthlyViews": 390,
+      "languages": 3,
+      "mandates": 1
+    },
+    "795100": {
+      "level": 3,
+      "medianMonthlyViews": 337,
+      "languages": 3,
+      "mandates": 2
+    },
+    "794770": {
+      "level": 3,
+      "medianMonthlyViews": 276,
+      "languages": 3,
+      "mandates": 2
+    },
+    "720146": {
+      "level": 2,
+      "medianMonthlyViews": 1077,
+      "languages": 3,
+      "mandates": 3
+    },
+    "720976": {
+      "level": 3,
+      "medianMonthlyViews": 253,
+      "languages": 4,
+      "mandates": 3
+    },
+    "720728": {
+      "level": 3,
+      "medianMonthlyViews": 376,
+      "languages": 3,
+      "mandates": 3
+    },
+    "795422": {
+      "level": 2,
+      "medianMonthlyViews": 1442,
+      "languages": 3,
+      "mandates": 2
+    },
+    "842271": {
+      "level": 1,
+      "medianMonthlyViews": 1285,
+      "languages": 8,
+      "mandates": 1,
+      "reasons": ["chef-de-parti"]
+    },
+    "794262": {
+      "level": 3,
+      "medianMonthlyViews": 282,
+      "languages": 2,
+      "mandates": 1
+    },
+    "793616": {
+      "level": 3,
+      "medianMonthlyViews": 535,
+      "languages": 3,
+      "mandates": 2
+    },
+    "794686": {
+      "level": 2,
+      "medianMonthlyViews": 2057,
+      "languages": 4,
+      "mandates": 2
+    },
+    "841931": {
+      "level": 3,
+      "medianMonthlyViews": 451,
+      "languages": 3,
+      "mandates": 1
+    },
+    "719436": {
+      "level": 2,
+      "medianMonthlyViews": 615,
+      "languages": 5,
+      "mandates": 3
+    },
+    "719338": {
+      "level": 3,
+      "medianMonthlyViews": 211,
+      "languages": 3,
+      "mandates": 3
+    },
+    "793354": {
+      "level": 2,
+      "medianMonthlyViews": 422,
+      "languages": 10,
+      "mandates": 2
+    },
+    "795786": {
+      "level": 3,
+      "medianMonthlyViews": 451,
+      "languages": 3,
+      "mandates": 2
+    },
+    "794322": {
+      "level": 2,
+      "medianMonthlyViews": 4502,
+      "languages": 3,
+      "mandates": 2
+    },
+    "720370": {
+      "level": 2,
+      "medianMonthlyViews": 524,
+      "languages": 4,
+      "mandates": 3
+    },
+    "841463": {
+      "level": 3,
+      "medianMonthlyViews": 335,
+      "languages": 3,
+      "mandates": 1
+    },
+    "841215": {
+      "level": 1,
+      "medianMonthlyViews": 5652,
+      "languages": 5,
+      "mandates": 1
+    },
+    "719640": {
+      "level": 3,
+      "medianMonthlyViews": 241,
+      "languages": 3,
+      "mandates": 3
+    },
+    "795176": {
+      "level": 2,
+      "medianMonthlyViews": 748,
+      "languages": 4,
+      "mandates": 2
+    },
+    "719272": {
+      "level": 3,
+      "medianMonthlyViews": 223,
+      "languages": 4,
+      "mandates": 3
+    },
+    "795482": {
+      "level": 2,
+      "medianMonthlyViews": 2866,
+      "languages": 4,
+      "mandates": 2
+    },
+    "793852": {
+      "level": 3,
+      "medianMonthlyViews": 448,
+      "languages": 4,
+      "mandates": 2
+    },
+    "841395": {
+      "level": 2,
+      "medianMonthlyViews": 657,
+      "languages": 3,
+      "mandates": 1
+    },
+    "841769": {
+      "level": 2,
+      "medianMonthlyViews": 1212,
+      "languages": 3,
+      "mandates": 1
+    },
+    "795664": {
+      "level": 2,
+      "medianMonthlyViews": 2344,
+      "languages": 3,
+      "mandates": 2
+    },
+    "817203": {
+      "level": 2,
+      "medianMonthlyViews": 1191,
+      "languages": 3,
+      "mandates": 2
+    },
+    "643104": {
+      "level": 3,
+      "medianMonthlyViews": 544,
+      "languages": 3,
+      "mandates": 1
+    },
+    "795962": {
+      "level": 2,
+      "medianMonthlyViews": 833,
+      "languages": 4,
+      "mandates": 1
+    },
+    "607619": {
+      "level": 1,
+      "medianMonthlyViews": 1200,
+      "languages": 10,
+      "mandates": 4,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "842147": {
+      "level": 3,
+      "medianMonthlyViews": 376,
+      "languages": 2,
+      "mandates": 1
+    },
+    "793174": {
+      "level": 3,
+      "medianMonthlyViews": 647,
+      "languages": 3,
+      "mandates": 2
+    },
+    "840915": {
+      "level": 2,
+      "medianMonthlyViews": 1052,
+      "languages": 3,
+      "mandates": 1
+    },
+    "794810": {
+      "level": 2,
+      "medianMonthlyViews": 594,
+      "languages": 4,
+      "mandates": 2
+    },
+    "793696": {
+      "level": 3,
+      "medianMonthlyViews": 196,
+      "languages": 4,
+      "mandates": 2
+    },
+    "795820": {
+      "level": 3,
+      "medianMonthlyViews": 266,
+      "languages": 4,
+      "mandates": 2
+    },
+    "721486": {
+      "level": 1,
+      "medianMonthlyViews": 1107,
+      "languages": 5,
+      "mandates": 3,
+      "reasons": ["president-groupe"]
+    },
+    "643157": {
+      "level": 1,
+      "medianMonthlyViews": 162,
+      "languages": 4,
+      "mandates": 4,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "794038": {
+      "level": 2,
+      "medianMonthlyViews": 2131,
+      "languages": 4,
+      "mandates": 2
+    },
+    "610654": {
+      "level": 1,
+      "medianMonthlyViews": 421,
+      "languages": 6,
+      "mandates": 4,
+      "reasons": ["chef-de-parti", "quatre-mandats-ou-plus"]
+    },
+    "841191": {
+      "level": 3,
+      "medianMonthlyViews": 351,
+      "languages": 3,
+      "mandates": 1
+    },
+    "841107": {
+      "level": 3,
+      "medianMonthlyViews": 309,
+      "languages": 3,
+      "mandates": 1
+    },
+    "721960": {
+      "level": 1,
+      "medianMonthlyViews": 7727,
+      "languages": 13,
+      "mandates": 3
+    },
+    "795552": {
+      "level": 1,
+      "medianMonthlyViews": 18778,
+      "languages": 6,
+      "mandates": 2
+    },
+    "795722": {
+      "level": 1,
+      "medianMonthlyViews": 5682,
+      "languages": 6,
+      "mandates": 2
+    },
+    "794830": {
+      "level": 3,
+      "medianMonthlyViews": 274,
+      "languages": 4,
+      "mandates": 2
+    },
+    "842045": {
+      "level": 3,
+      "medianMonthlyViews": 317,
+      "languages": 3,
+      "mandates": 1
+    },
+    "793872": {
+      "level": 2,
+      "medianMonthlyViews": 1089,
+      "languages": 3,
+      "mandates": 2
+    },
+    "795124": {
+      "level": 3,
+      "medianMonthlyViews": 219,
+      "languages": 2,
+      "mandates": 2
+    },
+    "720334": {
+      "level": 2,
+      "medianMonthlyViews": 507,
+      "languages": 5,
+      "mandates": 3
+    },
+    "841993": {
+      "level": 3,
+      "medianMonthlyViews": 936,
+      "languages": 1,
+      "mandates": 1
+    },
+    "759832": {
+      "level": 1,
+      "medianMonthlyViews": 12412,
+      "languages": 19,
+      "mandates": 1,
+      "reasons": ["ancien-ministre"]
+    },
+    "719632": {
+      "level": 3,
+      "medianMonthlyViews": 373,
+      "languages": 4,
+      "mandates": 3
+    },
+    "720892": {
+      "level": 1,
+      "medianMonthlyViews": 35985,
+      "languages": 15,
+      "mandates": 3,
+      "reasons": ["president-groupe"]
+    },
+    "841381": {
+      "level": 3,
+      "medianMonthlyViews": 456,
+      "languages": 3,
+      "mandates": 1
+    },
+    "794670": {
+      "level": 2,
+      "medianMonthlyViews": 2153,
+      "languages": 3,
+      "mandates": 2
+    },
+    "720480": {
+      "level": 1,
+      "medianMonthlyViews": 2049,
+      "languages": 6,
+      "mandates": 3,
+      "reasons": ["ancien-ministre"]
+    },
+    "793398": {
+      "level": 2,
+      "medianMonthlyViews": 6836,
+      "languages": 3,
+      "mandates": 2
+    },
+    "718784": {
+      "level": 3,
+      "medianMonthlyViews": 530,
+      "languages": 3,
+      "mandates": 3
+    },
+    "840793": {
+      "level": 2,
+      "medianMonthlyViews": 766,
+      "languages": 3,
+      "mandates": 1
+    },
+    "841199": {
+      "level": 3,
+      "medianMonthlyViews": 210,
+      "languages": 3,
+      "mandates": 1
+    },
+    "721182": {
+      "level": 2,
+      "medianMonthlyViews": 408,
+      "languages": 7,
+      "mandates": 3
+    },
+    "721234": {
+      "level": 2,
+      "medianMonthlyViews": 715,
+      "languages": 4,
+      "mandates": 3
+    },
+    "721270": {
+      "level": 1,
+      "medianMonthlyViews": 2224,
+      "languages": 3,
+      "mandates": 3,
+      "reasons": ["president-groupe"]
+    },
+    "793708": {
+      "level": 2,
+      "medianMonthlyViews": 1399,
+      "languages": 3,
+      "mandates": 2
+    },
+    "794582": {
+      "level": 2,
+      "medianMonthlyViews": 1117,
+      "languages": 5,
+      "mandates": 2
+    },
+    "794270": {
+      "level": 2,
+      "medianMonthlyViews": 551,
+      "languages": 4,
+      "mandates": 2
+    },
+    "817211": {
+      "level": 3,
+      "medianMonthlyViews": 392,
+      "languages": 3,
+      "mandates": 2
+    },
+    "793756": {
+      "level": 1,
+      "medianMonthlyViews": 4507,
+      "languages": 4,
+      "mandates": 2
+    },
+    "608172": {
+      "level": 1,
+      "medianMonthlyViews": 509,
+      "languages": 4,
+      "mandates": 4,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "721844": {
+      "level": 3,
+      "medianMonthlyViews": 277,
+      "languages": 4,
+      "mandates": 3
+    },
+    "793572": {
+      "level": 3,
+      "medianMonthlyViews": 365,
+      "languages": 4,
+      "mandates": 2
+    },
+    "793664": {
+      "level": 2,
+      "medianMonthlyViews": 1317,
+      "languages": 4,
+      "mandates": 2
+    },
+    "793656": {
+      "level": 3,
+      "medianMonthlyViews": 299,
+      "languages": 3,
+      "mandates": 2
+    },
+    "719528": {
+      "level": 3,
+      "medianMonthlyViews": 247,
+      "languages": 3,
+      "mandates": 3
+    },
+    "796062": {
+      "level": 1,
+      "medianMonthlyViews": 8581,
+      "languages": 5,
+      "mandates": 2
+    },
+    "794994": {
+      "level": 2,
+      "medianMonthlyViews": 1323,
+      "languages": 3,
+      "mandates": 2
+    },
+    "607553": {
+      "level": 1,
+      "medianMonthlyViews": 706,
+      "languages": 5,
+      "mandates": 4,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "720720": {
+      "level": 3,
+      "medianMonthlyViews": 264,
+      "languages": 3,
+      "mandates": 3
+    },
+    "795270": {
+      "level": 2,
+      "medianMonthlyViews": 1044,
+      "languages": 5,
+      "mandates": 2
+    },
+    "721916": {
+      "level": 3,
+      "medianMonthlyViews": 357,
+      "languages": 4,
+      "mandates": 3
+    },
+    "720100": {
+      "level": 2,
+      "medianMonthlyViews": 3148,
+      "languages": 4,
+      "mandates": 3
+    },
+    "840955": {
+      "level": 3,
+      "medianMonthlyViews": 372,
+      "languages": 5,
+      "mandates": 1
+    },
+    "841367": {
+      "level": 3,
+      "medianMonthlyViews": 262,
+      "languages": 3,
+      "mandates": 1
+    },
+    "719578": {
+      "level": 2,
+      "medianMonthlyViews": 664,
+      "languages": 3,
+      "mandates": 3
+    },
+    "795966": {
+      "level": 3,
+      "medianMonthlyViews": 235,
+      "languages": 3,
+      "mandates": 2
+    },
+    "720092": {
+      "level": 1,
+      "medianMonthlyViews": 3620,
+      "languages": 5,
+      "mandates": 3
+    },
+    "793230": {
+      "level": 3,
+      "medianMonthlyViews": 332,
+      "languages": 3,
+      "mandates": 2
+    },
+    "793254": {
+      "level": 2,
+      "medianMonthlyViews": 747,
+      "languages": 4,
+      "mandates": 2
+    },
+    "721062": {
+      "level": 1,
+      "medianMonthlyViews": 617,
+      "languages": 4,
+      "mandates": 3,
+      "reasons": ["chef-de-parti"]
+    },
+    "720552": {
+      "level": 2,
+      "medianMonthlyViews": 662,
+      "languages": 3,
+      "mandates": 3
+    },
+    "794154": {
+      "level": 3,
+      "medianMonthlyViews": 386,
+      "languages": 4,
+      "mandates": 2
+    },
+    "793094": {
+      "level": 3,
+      "medianMonthlyViews": 435,
+      "languages": 3,
+      "mandates": 2
+    },
+    "341981": {
+      "level": 2,
+      "medianMonthlyViews": 437,
+      "languages": 5,
+      "mandates": 2
+    },
+    "794778": {
+      "level": 2,
+      "medianMonthlyViews": 867,
+      "languages": 8,
+      "mandates": 2
+    },
+    "795240": {
+      "level": 3,
+      "medianMonthlyViews": 266,
+      "languages": 4,
+      "mandates": 2
+    },
+    "841955": {
+      "level": 2,
+      "medianMonthlyViews": 1082,
+      "languages": 3,
+      "mandates": 1
+    },
+    "841377": {
+      "level": 3,
+      "medianMonthlyViews": 231,
+      "languages": 2,
+      "mandates": 1
+    },
+    "840657": {
+      "level": 2,
+      "medianMonthlyViews": 702,
+      "languages": 3,
+      "mandates": 1
+    },
+    "795876": {
+      "level": 2,
+      "medianMonthlyViews": 675,
+      "languages": 5,
+      "mandates": 2
+    },
+    "841981": {
+      "level": 3,
+      "medianMonthlyViews": 263,
+      "languages": 3,
+      "mandates": 1
+    },
+    "721426": {
+      "level": 2,
+      "medianMonthlyViews": 600,
+      "languages": 4,
+      "mandates": 3
+    },
+    "842227": {
+      "level": 3,
+      "medianMonthlyViews": 205,
+      "languages": 3,
+      "mandates": 1
+    },
+    "722252": {
+      "level": 3,
+      "medianMonthlyViews": 447,
+      "languages": 4,
+      "mandates": 3
+    },
+    "794442": {
+      "level": 3,
+      "medianMonthlyViews": 422,
+      "languages": 3,
+      "mandates": 2
+    },
+    "795528": {
+      "level": 1,
+      "medianMonthlyViews": 5990,
+      "languages": 4,
+      "mandates": 2
+    },
+    "266808": {
+      "level": 1,
+      "medianMonthlyViews": 270,
+      "languages": 6,
+      "mandates": 4,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "841927": {
+      "level": 3,
+      "medianMonthlyViews": 288,
+      "languages": 2,
+      "mandates": 1
+    },
+    "721458": {
+      "level": 3,
+      "medianMonthlyViews": 335,
+      "languages": 4,
+      "mandates": 3
+    },
+    "840673": {
+      "level": 3,
+      "medianMonthlyViews": 331,
+      "languages": 1,
+      "mandates": 1
+    },
+    "342196": {
+      "level": 3,
+      "medianMonthlyViews": 215,
+      "languages": 5,
+      "mandates": 3
+    },
+    "795410": {
+      "level": 3,
+      "medianMonthlyViews": 342,
+      "languages": 3,
+      "mandates": 2
+    },
+    "606545": {
+      "level": 2,
+      "medianMonthlyViews": 690,
+      "languages": 8,
+      "mandates": 2
+    },
+    "826635": {
+      "level": 1,
+      "medianMonthlyViews": 7071,
+      "languages": 6,
+      "mandates": 1,
+      "reasons": ["ancien-ministre"]
+    },
+    "795076": {
+      "level": 1,
+      "medianMonthlyViews": 23277,
+      "languages": 15,
+      "mandates": 2
+    },
+    "841327": {
+      "level": 3,
+      "medianMonthlyViews": 371,
+      "languages": 3,
+      "mandates": 1
+    },
+    "793270": {
+      "level": 3,
+      "medianMonthlyViews": 321,
+      "languages": 3,
+      "mandates": 2
+    },
+    "842097": {
+      "level": 3,
+      "medianMonthlyViews": 237,
+      "languages": 4,
+      "mandates": 1
+    },
+    "722142": {
+      "level": 1,
+      "medianMonthlyViews": 32746,
+      "languages": 11,
+      "mandates": 3
+    },
+    "841717": {
+      "level": 2,
+      "medianMonthlyViews": 789,
+      "languages": 4,
+      "mandates": 1
+    },
+    "794894": {
+      "level": 3,
+      "medianMonthlyViews": 325,
+      "languages": 3,
+      "mandates": 2
+    },
+    "794570": {
+      "level": 3,
+      "medianMonthlyViews": 440,
+      "languages": 4,
+      "mandates": 2
+    },
+    "841845": {
+      "level": 2,
+      "medianMonthlyViews": 1255,
+      "languages": 3,
+      "mandates": 1
+    },
+    "841243": {
+      "level": 2,
+      "medianMonthlyViews": 857,
+      "languages": 4,
+      "mandates": 1
+    },
+    "720138": {
+      "level": 2,
+      "medianMonthlyViews": 750,
+      "languages": 6,
+      "mandates": 3
+    },
+    "795982": {
+      "level": 2,
+      "medianMonthlyViews": 4082,
+      "languages": 3,
+      "mandates": 2
+    },
+    "794954": {
+      "level": 3,
+      "medianMonthlyViews": 390,
+      "languages": 3,
+      "mandates": 2
+    },
+    "721110": {
+      "level": 3,
+      "medianMonthlyViews": 273,
+      "languages": 4,
+      "mandates": 2
+    },
+    "605745": {
+      "level": 2,
+      "medianMonthlyViews": 681,
+      "languages": 5,
+      "mandates": 3
+    },
+    "774960": {
+      "level": 2,
+      "medianMonthlyViews": 470,
+      "languages": 4,
+      "mandates": 3
+    },
+    "610002": {
+      "level": 2,
+      "medianMonthlyViews": 1351,
+      "languages": 5,
+      "mandates": 3
+    },
+    "340343": {
+      "level": 3,
+      "medianMonthlyViews": 313,
+      "languages": 3,
+      "mandates": 3
+    },
+    "721314": {
+      "level": 2,
+      "medianMonthlyViews": 964,
+      "languages": 5,
+      "mandates": 3
+    },
+    "796050": {
+      "level": 3,
+      "medianMonthlyViews": 440,
+      "languages": 3,
+      "mandates": 2
+    },
+    "795808": {
+      "level": 2,
+      "medianMonthlyViews": 1967,
+      "languages": 3,
+      "mandates": 2
+    },
+    "757225": {
+      "level": 3,
+      "medianMonthlyViews": 124,
+      "languages": 3,
+      "mandates": 2
+    },
+    "720960": {
+      "level": 2,
+      "medianMonthlyViews": 694,
+      "languages": 3,
+      "mandates": 3
+    },
+    "842255": {
+      "level": 2,
+      "medianMonthlyViews": 1074,
+      "languages": 4,
+      "mandates": 1
+    },
+    "841091": {
+      "level": 3,
+      "medianMonthlyViews": 213,
+      "languages": 3,
+      "mandates": 1
+    },
+    "796018": {
+      "level": 1,
+      "medianMonthlyViews": 5477,
+      "languages": 4,
+      "mandates": 2
+    },
+    "794802": {
+      "level": 3,
+      "medianMonthlyViews": 602,
+      "languages": 3,
+      "mandates": 2
+    },
+    "720190": {
+      "level": 3,
+      "medianMonthlyViews": 238,
+      "languages": 4,
+      "mandates": 3
+    },
+    "841681": {
+      "level": 3,
+      "medianMonthlyViews": 511,
+      "languages": 3,
+      "mandates": 1
+    },
+    "795466": {
+      "level": 2,
+      "medianMonthlyViews": 10752,
+      "languages": 3,
+      "mandates": 2
+    },
+    "794486": {
+      "level": 1,
+      "medianMonthlyViews": 4284,
+      "languages": 4,
+      "mandates": 2
+    },
+    "793744": {
+      "level": 2,
+      "medianMonthlyViews": 559,
+      "languages": 4,
+      "mandates": 2
+    },
+    "267794": {
+      "level": 1,
+      "medianMonthlyViews": 2231,
+      "languages": 7,
+      "mandates": 6,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "720952": {
+      "level": 1,
+      "medianMonthlyViews": 3958,
+      "languages": 6,
+      "mandates": 3
+    },
+    "793382": {
+      "level": 2,
+      "medianMonthlyViews": 7307,
+      "languages": 3,
+      "mandates": 2
+    },
+    "736201": {
+      "level": 2,
+      "medianMonthlyViews": 1831,
+      "languages": 3,
+      "mandates": 2
+    },
+    "795778": {
+      "level": 1,
+      "medianMonthlyViews": 45232,
+      "languages": 4,
+      "mandates": 2
+    },
+    "719550": {
+      "level": 2,
+      "medianMonthlyViews": 439,
+      "languages": 7,
+      "mandates": 3
+    },
+    "793796": {
+      "level": 3,
+      "medianMonthlyViews": 611,
+      "languages": 3,
+      "mandates": 2
+    },
+    "794106": {
+      "level": 2,
+      "medianMonthlyViews": 469,
+      "languages": 5,
+      "mandates": 2
+    },
+    "794166": {
+      "level": 3,
+      "medianMonthlyViews": 460,
+      "languages": 3,
+      "mandates": 2
+    },
+    "794502": {
+      "level": 3,
+      "medianMonthlyViews": 529,
+      "languages": 3,
+      "mandates": 2
+    },
+    "841713": {
+      "level": 3,
+      "medianMonthlyViews": 530,
+      "languages": 3,
+      "mandates": 1
+    },
+    "721584": {
+      "level": 3,
+      "medianMonthlyViews": 372,
+      "languages": 3,
+      "mandates": 3
+    },
+    "841553": {
+      "level": 3,
+      "medianMonthlyViews": 438,
+      "languages": 3,
+      "mandates": 1
+    },
+    "795920": {
+      "level": 1,
+      "medianMonthlyViews": 17350,
+      "languages": 7,
+      "mandates": 2,
+      "reasons": ["ancien-ministre"]
+    },
+    "841893": {
+      "level": 3,
+      "medianMonthlyViews": 448,
+      "languages": 3,
+      "mandates": 1
+    },
+    "722336": {
+      "level": 3,
+      "medianMonthlyViews": 195,
+      "languages": 5,
+      "mandates": 3
+    },
+    "643089": {
+      "level": 2,
+      "medianMonthlyViews": 1215,
+      "languages": 3,
+      "mandates": 3
+    },
+    "793948": {
+      "level": 3,
+      "medianMonthlyViews": 374,
+      "languages": 3,
+      "mandates": 2
+    },
+    "719822": {
+      "level": 3,
+      "medianMonthlyViews": 314,
+      "languages": 4,
+      "mandates": 3
+    },
+    "793816": {
+      "level": 2,
+      "medianMonthlyViews": 677,
+      "languages": 4,
+      "mandates": 2
+    },
+    "793298": {
+      "level": 3,
+      "medianMonthlyViews": 305,
+      "languages": 3,
+      "mandates": 2
+    },
+    "842299": {
+      "level": 2,
+      "medianMonthlyViews": 567,
+      "languages": 4,
+      "mandates": 1
+    },
+    "840067": {
+      "level": 2,
+      "medianMonthlyViews": 728,
+      "languages": 3,
+      "mandates": 1
+    },
+    "840781": {
+      "level": 3,
+      "medianMonthlyViews": 289,
+      "languages": 3,
+      "mandates": 1
+    },
+    "607395": {
+      "level": 1,
+      "medianMonthlyViews": 1176,
+      "languages": 9,
+      "mandates": 4,
+      "reasons": ["ancien-ministre", "quatre-mandats-ou-plus"]
+    },
+    "840685": {
+      "level": 2,
+      "medianMonthlyViews": 701,
+      "languages": 3,
+      "mandates": 1
+    },
+    "793334": {
+      "level": 3,
+      "medianMonthlyViews": 485,
+      "languages": 2,
+      "mandates": 1
+    },
+    "795164": {
+      "level": 1,
+      "medianMonthlyViews": 5956,
+      "languages": 5,
+      "mandates": 2
+    },
+    "842121": {
+      "level": 2,
+      "medianMonthlyViews": 692,
+      "languages": 3,
+      "mandates": 1
+    },
+    "722162": {
+      "level": 3,
+      "medianMonthlyViews": 339,
+      "languages": 5,
+      "mandates": 3
+    },
+    "878242": {
+      "level": 2,
+      "medianMonthlyViews": 2339,
+      "languages": 3,
+      "mandates": 1
+    },
+    "719930": {
+      "level": 1,
+      "medianMonthlyViews": 11998,
+      "languages": 6,
+      "mandates": 3,
+      "reasons": ["president-groupe"]
+    },
+    "795350": {
+      "level": 1,
+      "medianMonthlyViews": 1932,
+      "languages": 5,
+      "mandates": 2
+    },
+    "795596": {
+      "level": 2,
+      "medianMonthlyViews": 4994,
+      "languages": 3,
+      "mandates": 2
+    },
+    "794118": {
+      "level": 2,
+      "medianMonthlyViews": 917,
+      "languages": 3,
+      "mandates": 2
+    },
+    "840809": {
+      "level": 2,
+      "medianMonthlyViews": 1546,
+      "languages": 3,
+      "mandates": 1
+    },
+    "794494": {
+      "level": 3,
+      "medianMonthlyViews": 344,
+      "languages": 3,
+      "mandates": 2
+    },
+    "722102": {
+      "level": 3,
+      "medianMonthlyViews": 356,
+      "languages": 4,
+      "mandates": 3
+    },
+    "607090": {
+      "level": 1,
+      "medianMonthlyViews": 372,
+      "languages": 5,
+      "mandates": 4,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "331582": {
+      "level": 1,
+      "medianMonthlyViews": 2227,
+      "languages": 6,
+      "mandates": 5,
+      "reasons": ["ancien-ministre", "quatre-mandats-ou-plus"]
+    },
+    "719512": {
+      "level": 3,
+      "medianMonthlyViews": 390,
+      "languages": 3,
+      "mandates": 3
+    },
+    "794946": {
+      "level": 3,
+      "medianMonthlyViews": 411,
+      "languages": 3,
+      "mandates": 2
+    },
+    "795026": {
+      "level": 2,
+      "medianMonthlyViews": 481,
+      "languages": 4,
+      "mandates": 2
+    },
+    "721474": {
+      "level": 3,
+      "medianMonthlyViews": 460,
+      "languages": 3,
+      "mandates": 3
+    },
+    "841575": {
+      "level": 3,
+      "medianMonthlyViews": 351,
+      "languages": 3,
+      "mandates": 1
+    },
+    "2940": {
+      "level": 1,
+      "medianMonthlyViews": 5414,
+      "languages": 20,
+      "mandates": 1,
+      "reasons": ["ancien-ministre"]
+    },
+    "793194": {
+      "level": 3,
+      "medianMonthlyViews": 630,
+      "languages": 3,
+      "mandates": 2
+    },
+    "2952": {
+      "level": 1,
+      "medianMonthlyViews": 511,
+      "languages": 6,
+      "mandates": 6,
+      "reasons": ["quatre-mandats-ou-plus"]
+    },
+    "267285": {
+      "level": 1,
+      "medianMonthlyViews": 21775,
+      "languages": 20,
+      "mandates": 4,
+      "reasons": [
+        "president-groupe",
+        "ancien-ministre",
+        "chef-de-parti",
+        "quatre-mandats-ou-plus"
+      ]
+    },
+    "841479": {
+      "level": 3,
+      "medianMonthlyViews": 284,
+      "languages": 3,
+      "mandates": 1
+    },
+    "795326": {
+      "level": 3,
+      "medianMonthlyViews": 543,
+      "languages": 3,
+      "mandates": 2
+    },
+    "720992": {
+      "level": 3,
+      "medianMonthlyViews": 276,
+      "languages": 3,
+      "mandates": 2
+    },
+    "795046": {
+      "level": 1,
+      "medianMonthlyViews": 6985,
+      "languages": 6,
+      "mandates": 2
+    },
+    "796078": {
+      "level": 1,
+      "medianMonthlyViews": 1867,
+      "languages": 9,
+      "mandates": 2
+    }
+  }
+}

@@ -1,0 +1,61 @@
+# Contrôle hebdomadaire de fraîcheur. Voir CLAUDE.md §5.2.
+#
+# La composition de l'Assemblée bouge : démissions, élections partielles, et surtout
+# changements de groupe, qui changent la bonne réponse. Ce workflow OUVRE UNE ISSUE
+# au lieu de commiter tout seul : une réponse fausse est un bug visible, une mise à
+# jour automatique non relue en est un invisible.
+#
+# Volontairement non bloquant : il dépend d'un serveur tiers.
+name: Fraîcheur des données
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # tous les lundis à 6 h UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 24, cache: npm }
+      - run: npm ci
+
+      - name: Régénérer et comparer
+        id: diff
+        run: |
+          cp data/deputies.json /tmp/avant.json
+          npm run fetch
+          # `fetchedAt` change à chaque exécution : on ne compare que les députés.
+          node -e "
+            const fs = require('node:fs');
+            const lire = (p) => JSON.stringify(JSON.parse(fs.readFileSync(p)).deputies);
+            const identique = lire('/tmp/avant.json') === lire('data/deputies.json');
+            fs.appendFileSync(process.env.GITHUB_OUTPUT, 'changed=' + !identique + '\n');
+          "
+
+      - name: Ouvrir une issue si la composition a changé
+        if: steps.diff.outputs.changed == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: "Composition de l'Assemblée modifiée",
+              body: [
+                "Le fichier open data de l'Assemblée ne correspond plus à `data/deputies.json`.",
+                "",
+                "Cela peut venir d'un changement de groupe, d'une démission ou d'une",
+                "élection partielle. Tant que la base n'est pas régénérée, le jeu peut",
+                "refuser une bonne réponse.",
+                "",
+                "Pour mettre à jour : `npm run fetch` puis `npm run verify`.",
+              ].join("\n"),
+              labels: ["données"],
+            });

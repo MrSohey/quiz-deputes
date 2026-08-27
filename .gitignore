@@ -1,0 +1,11 @@
+node_modules/
+dist/
+data/deputies.raw.csv
+*.local
+
+# Fichiers d'échange des éditeurs, qui traînent quand un fichier est ouvert.
+*.swp
+*.swo
+*~
+.DS_Store
+tsconfig.tsbuildinfo

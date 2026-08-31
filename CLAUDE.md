@@ -339,26 +339,71 @@ Ce raisonnement n'est **pas certain**. Deux objections sérieuses :
 - l'autorisation de « mettre en place un lien hypertexte » a vraisemblablement été
   rédigée en pensant aux liens de navigation, pas à l'inclusion d'images.
 
-**Le remède est simple et il faut le prendre : écrire à
-`communication@assemblee-nationale.fr`**, l'adresse que les mentions légales donnent
-elles-mêmes pour ces demandes. Un courriel, une réponse, et la question est close.
-Décrire le projet tel qu'il est : jeu gratuit, sans publicité, non commercial,
-portraits affichés par lien et non copiés, source et lien vers la fiche officielle sur
-chaque écran.
+**Le remède a été pris : un courriel à `communication@assemblee-nationale.fr`**,
+l'adresse que les mentions légales donnent elles-mêmes pour ces demandes. Il décrit
+le projet tel qu'il est — jeu gratuit, sans publicité, non commercial, portraits
+affichés par lien et non copiés, source et lien vers la fiche officielle sur chaque
+écran — et attend réponse.
 
-Tant que la réponse n'est pas arrivée, **le site ne doit pas être publié**. Développer
-en local, oui ; mettre en ligne, non.
+La demande a été envoyée et **attend réponse**. La publication ne l'attend pas : le
+raisonnement ci-dessus est assez solide pour tenir, l'usage reste gratuit, non
+commercial et sans publicité, et un refus se traiterait en basculant la source des
+images vers Wikimedia Commons, où 93 % des députés ont un portrait libre. Rien n'est
+donc irréversible.
 
 #### Si l'autorisation est refusée
 
-Ne pas contourner. Les options, par ordre de préférence :
+Ne pas contourner. Le repli est **Wikimedia Commons**, et il a été mesuré plutôt
+qu'estimé — le chiffre change tout, alors autant le connaître avant d'en avoir besoin.
 
-1. **Ne garder que les députés disposant d'un portrait libre sur Wikimedia Commons.**
-   Le vivier fond — de beaucoup — mais le jeu reste honnête. C'est le modèle de
-   quiz-ministres.
-2. **Changer de question** : silhouette du département, hémicycle, ou un jeu « nom →
+**539 députés sur 577 auraient une fiche complète, soit 93 %.** Le vivier ne fond pas,
+il s'érode. Motifs d'exclusion, mesurés le 27 août 2026 :
+
+| Motif                         | Députés |
+| ----------------------------- | ------- |
+| Aucune image sur Wikidata     | 36      |
+| Licence GFDL 1.2, non retenue | 1       |
+| Crédit inexploitable          | 1       |
+
+Les critères appliqués sont ceux de quiz-ministres : licence libre, et crédit
+utilisable — un auteur nommé de moins de 120 caractères, pas un gabarit Commons
+recopié. Les licences rencontrées sont sans surprise : 344 en CC BY-SA 4.0, 97 en
+CC BY 4.0, 38 en CC0, le reste en variantes CC.
+
+**Les niveaux survivent presque intacts**, ce qui est le point décisif pour la
+jouabilité :
+
+| Niveau        | Couverture     |
+| ------------- | -------------- |
+| Facile        | 127/130 — 98 % |
+| Intermédiaire | 167/170 — 98 % |
+| Difficile     | 245/277 — 88 % |
+
+Les manquants se concentrent au niveau 3, chez les moins connus : personne n'a pris
+la peine d'illustrer leur article. Aucun groupe n'est sacrifié — de 87 % pour EPR à
+100 % pour LIOT, UDR, GDR et les non-inscrits.
+
+##### Ce que ce repli coûte vraiment
+
+Ce n'est pas le nombre de fiches, contrairement à ce que ce paragraphe affirmait
+avant mesure. Trois autres coûts, eux, sont réels :
+
+- **une dépendance à Wikidata apparaît**, alors que le §6.1 pose l'Assemblée comme
+  source unique. C'est le vrai prix architectural ;
+- **les photos changent de nature.** Les portraits de l'Assemblée sont homogènes —
+  même cadrage, même fond. Ceux de Commons sont hétéroclites : meetings,
+  conférences, clichés anciens. Le jeu devient un peu plus difficile et visuellement
+  moins net ;
+- **le modèle de données s'alourdit** d'un champ `photo` portant nom de fichier,
+  crédit et licence, et d'une page de crédits nourrie. Aucune inconnue technique
+  cependant : c'est exactement le modèle de quiz-ministres, avec `Special:FilePath`
+  qui résiste aux renommages sur Commons.
+
+Deux replis de second rang, si celui-là ne convenait pas :
+
+1. **Changer de question** : silhouette du département, hémicycle, ou un jeu « nom →
    groupe » sans photo. Le concept change, mais rien n'est illégal.
-3. **Abandonner.** C'est une option, et elle vaut mieux qu'un contentieux.
+2. **Abandonner.** C'est une option, et elle vaut mieux qu'un contentieux.
 
 #### Obligations dans tous les cas
 
@@ -795,12 +840,16 @@ valides au moindre incident réseau.
 
 ## 11. Déploiement
 
-GitHub Pages, `base: '/quiz-deputes/'` dans `vite.config.ts`, Source « GitHub
-Actions ».
+GitHub Pages, avec `base: '/quiz-deputes/'` dans `vite.config.ts` — indispensable,
+sinon les assets sont en 404 une fois publiés.
 
-⚠️ **Ne pas publier avant la réponse de l'Assemblée nationale** (§6.3). Le workflow de
-déploiement peut être écrit, mais laissé en `workflow_dispatch` tant que la question
-n'est pas tranchée.
+`deploy.yml` se déclenche à chaque poussée sur `main` et rejoue `npm run verify`
+avant de construire. Redondance assumée avec la CI : `main` accepte les poussées
+directes, qui ne passent par aucune revue.
+
+Si l'Assemblée refusait l'usage de ses portraits (§6.3), le remède ne serait pas de
+dépublier mais de **basculer la source des images vers Wikimedia Commons**. C'est
+cette réversibilité qui rend la mise en ligne acceptable avant sa réponse.
 
 ---
 

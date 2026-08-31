@@ -6,10 +6,10 @@ et **son groupe politique à l'Assemblée nationale**. Trois indices en cas de b
 **577 députés, trois niveaux gigognes** : Facile (130), Intermédiaire (300),
 Difficile (les 577).
 
-> ⚠️ **Usage local uniquement pour l'instant.** Le site n'est pas publié, et le
-> workflow de déploiement est volontairement en déclenchement manuel. Voir
-> [Photographies](#photographies) ci-dessous : la question de la licence n'est pas
-> tranchée.
+> ℹ️ Le jeu est publié sur GitHub Pages à chaque poussée sur `main`. Les portraits
+> ne sont ni copiés ni hébergés : ils sont affichés par lien depuis le site de
+> l'Assemblée, qui autorise expressément les liens vers son contenu. Une demande
+> d'autorisation explicite attend réponse — voir [Photographies](#photographies).
 
 ## Démarrer
 
@@ -73,9 +73,14 @@ explicites : « Les graphismes, photographies et ressources multimédias ne peuv
 site Internet […] à mettre en place un lien hypertexte pointant vers son contenu ».
 
 Le pari retenu est donc que **lier n'est pas reproduire**. Ce raisonnement n'est pas
-certain : une balise `<img>` affiche l'image et non seulement y renvoie. D'où la
-demande d'autorisation en cours auprès de `communication@assemblee-nationale.fr`, et
-d'ici là un usage strictement local.
+certain : une balise `<img>` affiche l'image et non seulement y renvoie. Une demande
+d'autorisation explicite a donc été adressée à `communication@assemblee-nationale.fr`
+et attend réponse.
+
+En cas de refus, le repli est Wikimedia Commons : **539 députés sur 577 y ont un
+portrait libre et exploitable**, soit 93 %, et les niveaux Facile et Intermédiaire
+seraient couverts à 98 %. Le détail et les coûts réels de ce repli sont en §6.3 du
+`CLAUDE.md`.
 
 Le jeu est et doit rester **gratuit, sans publicité et non commercial** : c'est une
 condition posée par les mentions légales, pas une préférence.

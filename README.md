@@ -77,6 +77,11 @@ certain : une balise `<img>` affiche l'image et non seulement y renvoie. D'où l
 demande d'autorisation en cours auprès de `communication@assemblee-nationale.fr`, et
 d'ici là un usage strictement local.
 
+En cas de refus, le repli est Wikimedia Commons : **539 députés sur 577 y ont un
+portrait libre et exploitable**, soit 93 %, et les niveaux Facile et Intermédiaire
+seraient couverts à 98 %. Le détail et les coûts réels de ce repli sont en §6.3 du
+`CLAUDE.md`.
+
 Le jeu est et doit rester **gratuit, sans publicité et non commercial** : c'est une
 condition posée par les mentions légales, pas une préférence.
 

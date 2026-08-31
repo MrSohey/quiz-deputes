@@ -1,14 +1,19 @@
-# Publication sur GitHub Pages.
+# Publication sur GitHub Pages, à chaque poussée sur `main`.
 #
-# ⚠️ DÉCLENCHEMENT MANUEL UNIQUEMENT, et c'est délibéré : les portraits appartiennent
-# à l'Assemblée nationale, qui interdit la reproduction de ses photographies. Tant
-# que l'autorisation demandée à communication@assemblee-nationale.fr n'est pas
-# arrivée, le site ne doit pas être publié (CLAUDE.md §6.3 et §11).
+# Les portraits ne sont ni copiés ni hébergés : ils sont affichés par lien depuis le
+# serveur de l'Assemblée, qui autorise expressément les liens vers son contenu
+# (CLAUDE.md §6.3). Le jeu reste gratuit, sans publicité et non commercial, ce que
+# ses mentions légales exigent.
 #
-# Ne PAS ajouter de déclencheur `push` avant d'avoir la réponse.
+# Une demande d'autorisation explicite a été envoyée et attend réponse. Publier sans
+# l'attendre n'engage rien d'irréversible : un refus se traiterait en basculant la
+# source des images vers Wikimedia Commons, où 93 % des députés ont un portrait
+# libre (§6.3).
 name: Déploiement
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:

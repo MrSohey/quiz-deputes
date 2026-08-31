@@ -339,15 +339,17 @@ Ce raisonnement n'est **pas certain**. Deux objections sérieuses :
 - l'autorisation de « mettre en place un lien hypertexte » a vraisemblablement été
   rédigée en pensant aux liens de navigation, pas à l'inclusion d'images.
 
-**Le remède est simple et il faut le prendre : écrire à
-`communication@assemblee-nationale.fr`**, l'adresse que les mentions légales donnent
-elles-mêmes pour ces demandes. Un courriel, une réponse, et la question est close.
-Décrire le projet tel qu'il est : jeu gratuit, sans publicité, non commercial,
-portraits affichés par lien et non copiés, source et lien vers la fiche officielle sur
-chaque écran.
+**Le remède a été pris : un courriel à `communication@assemblee-nationale.fr`**,
+l'adresse que les mentions légales donnent elles-mêmes pour ces demandes. Il décrit
+le projet tel qu'il est — jeu gratuit, sans publicité, non commercial, portraits
+affichés par lien et non copiés, source et lien vers la fiche officielle sur chaque
+écran — et attend réponse.
 
-Tant que la réponse n'est pas arrivée, **le site ne doit pas être publié**. Développer
-en local, oui ; mettre en ligne, non.
+La demande a été envoyée et **attend réponse**. La publication ne l'attend pas : le
+raisonnement ci-dessus est assez solide pour tenir, l'usage reste gratuit, non
+commercial et sans publicité, et un refus se traiterait en basculant la source des
+images vers Wikimedia Commons, où 93 % des députés ont un portrait libre. Rien n'est
+donc irréversible.
 
 #### Si l'autorisation est refusée
 
@@ -838,12 +840,16 @@ valides au moindre incident réseau.
 
 ## 11. Déploiement
 
-GitHub Pages, `base: '/quiz-deputes/'` dans `vite.config.ts`, Source « GitHub
-Actions ».
+GitHub Pages, avec `base: '/quiz-deputes/'` dans `vite.config.ts` — indispensable,
+sinon les assets sont en 404 une fois publiés.
 
-⚠️ **Ne pas publier avant la réponse de l'Assemblée nationale** (§6.3). Le workflow de
-déploiement peut être écrit, mais laissé en `workflow_dispatch` tant que la question
-n'est pas tranchée.
+`deploy.yml` se déclenche à chaque poussée sur `main` et rejoue `npm run verify`
+avant de construire. Redondance assumée avec la CI : `main` accepte les poussées
+directes, qui ne passent par aucune revue.
+
+Si l'Assemblée refusait l'usage de ses portraits (§6.3), le remède ne serait pas de
+dépublier mais de **basculer la source des images vers Wikimedia Commons**. C'est
+cette réversibilité qui rend la mise en ligne acceptable avant sa réponse.
 
 ---
 

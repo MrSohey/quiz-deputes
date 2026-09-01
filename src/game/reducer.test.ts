@@ -147,6 +147,37 @@ describe("indices et révélation", () => {
   });
 });
 
+describe("reset", () => {
+  // « Changer de niveau » repasse par là : sans cette action, l'accueil devient
+  // inatteignable une fois la première partie lancée.
+  it("ramène à l'accueil sans conserver la partie", () => {
+    let s = started();
+    s = gameReducer(s, { type: "reveal" });
+    expect(s.score).toBeGreaterThanOrEqual(0);
+
+    const apres = gameReducer(s, { type: "reset" });
+    expect(apres.status).toBe("idle");
+    expect(apres.round).toBeNull();
+    expect(apres.level).toBeNull();
+    expect(apres.seed).toBeNull();
+    expect(apres.history).toEqual([]);
+    expect(apres.score).toBe(0);
+    // La base, elle, survit : c'est elle qui alimente le choix du niveau.
+    expect(apres.deputies).toEqual(POOL);
+  });
+
+  it("permet de repartir sur un autre niveau", () => {
+    const accueil = gameReducer(started(), { type: "reset" });
+    const suite = gameReducer(accueil, {
+      type: "start",
+      level: "difficile",
+      seed: "autre",
+    });
+    expect(suite.status).toBe("playing");
+    expect(suite.round).not.toBeNull();
+  });
+});
+
 describe("enchaînement", () => {
   it("termine la partie après la dernière manche", () => {
     let s = gameReducer(initialState(POOL.slice(0, 2)), {

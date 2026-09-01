@@ -71,6 +71,8 @@ export interface GameState {
 
 export type GameAction =
   | { type: "start"; level: LevelId; seed: string }
+  /** Retour au choix du niveau, sans conserver la partie précédente. */
+  | { type: "reset" }
   | { type: "submit"; field: AnswerField; value: string }
   | { type: "requestHint" }
   | { type: "reveal" }
@@ -174,6 +176,9 @@ export function gameReducer(state: GameState, action: GameAction): GameState {
         round: newRound(first, 0),
       };
     }
+
+    case "reset":
+      return initialState(state.deputies);
 
     case "submit": {
       const round = state.round;

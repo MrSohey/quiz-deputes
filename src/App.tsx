@@ -113,6 +113,18 @@ export function App() {
     startGame(state.level, randomSeed());
   }
 
+  /**
+   * « Changer de niveau » : retour à l'accueil.
+   *
+   * Le défi est retiré de l'adresse : la partie qu'il désigne est terminée, et le
+   * laisser afficherait un lien de défi périmé pendant le choix du niveau.
+   */
+  function handleChangeLevel() {
+    setStaleChallenge(false);
+    window.history.replaceState(null, "", window.location.pathname);
+    dispatch({ type: "reset" });
+  }
+
   function handleNext() {
     const round = state.round;
     const isLast = round !== null && round.index + 1 >= state.roundsInGame;
@@ -175,6 +187,7 @@ export function App() {
           isNewRecord={isNewRecord}
           history={state.history}
           onRestart={handleRestart}
+          onChangeLevel={handleChangeLevel}
         />
         {shareUrl && <ShareChallenge url={shareUrl} />}
       </main>

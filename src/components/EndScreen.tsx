@@ -8,6 +8,7 @@ interface Props {
   isNewRecord: boolean;
   history: readonly Round[];
   onRestart: () => void;
+  onChangeLevel: () => void;
 }
 
 export function EndScreen({
@@ -17,10 +18,12 @@ export function EndScreen({
   isNewRecord,
   history,
   onRestart,
+  onChangeLevel,
 }: Props) {
   return (
     <section className="panel">
-      <h1>Partie terminée</h1>
+      {/* `h2` et non `h1` : le titre du jeu, rendu par `App`, occupe déjà ce rang. */}
+      <h2>Partie terminée — niveau {levelLabel.toLowerCase()}</h2>
       <p>
         Score : <strong>{score}</strong>
       </p>
@@ -45,9 +48,14 @@ export function EndScreen({
         ))}
       </ul>
 
-      <button type="button" className="primary" onClick={onRestart} autoFocus>
-        Rejouer en {levelLabel.toLowerCase()}
-      </button>
+      <div className="actions">
+        <button type="button" className="primary" onClick={onRestart} autoFocus>
+          Rejouer en {levelLabel.toLowerCase()}
+        </button>
+        <button type="button" onClick={onChangeLevel}>
+          Changer de niveau
+        </button>
+      </div>
     </section>
   );
 }

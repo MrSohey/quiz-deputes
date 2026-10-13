@@ -41,9 +41,13 @@ de groupe modifient la bonne réponse.
 npm run fetch && npm run verify
 ```
 
-Un workflow hebdomadaire compare l'open data à la base et **ouvre une issue** en cas
-d'écart. Il ne commite rien tout seul : une mise à jour non relue serait un bug
-invisible, là qu'une réponse fausse est un bug visible.
+Un workflow hebdomadaire compare l'open data à la base et, en cas d'écart, **régénère
+la base et ouvre une pull request** sur la branche `data/composition-assemblee`. Il ne
+pousse jamais sur `main` : une mise à jour non relue serait un bug invisible, là qu'une
+réponse fausse est un bug visible.
+
+Son corps de PR liste les écarts en clair — **changements de groupe d'abord**, seul cas
+qui rende fausse une réponse jusque-là correcte — puis les arrivées et les départs.
 
 Deux fichiers survivent à la régénération, parce qu'ils vivent à part : les
 `aliases` (`data/aliases.json`) et l'échelle de difficulté (`data/difficulty.json`).

@@ -26,8 +26,21 @@ describe("deputies.json", () => {
     expect(new Set(ids).size).toBe(ids.length);
   });
 
-  it("compte les 577 sièges", () => {
-    expect(DEPUTIES).toHaveLength(577);
+  /**
+   * 577 est le nombre de SIÈGES, pas le nombre de députés en exercice.
+   *
+   * Entre un départ et la partielle qui le remplace, le siège reste vacant et
+   * l'Assemblée ne le publie pas : l'open data est descendu à 574 en octobre 2026.
+   * Exiger 577 ferait donc échouer le contrôle hebdomadaire (§5.2) précisément
+   * quand il a quelque chose à signaler — une PR de mise à jour ne s'ouvrirait
+   * jamais, et le jeu resterait figé sur une composition périmée.
+   *
+   * Le plancher garde ce que ce test cherchait vraiment : un fichier tronqué ou
+   * un parsing cassé, qui font chuter le compte de bien plus que quelques sièges.
+   */
+  it("compte un député par siège pourvu", () => {
+    expect(DEPUTIES.length).toBeLessThanOrEqual(577);
+    expect(DEPUTIES.length).toBeGreaterThan(550);
   });
 
   it("rattache chaque député à un groupe connu", () => {

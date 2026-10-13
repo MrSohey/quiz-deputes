@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-25T19:28:00.882Z",
+  "fetchedAt": "2026-10-13T13:36:46.986Z",
   "deputies": [
     {
       "id": "793214",
@@ -108,18 +108,6 @@
       "profession": "(37) - Cadre administratif et commercial d'entreprise",
       "difficulty": 1,
       "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA841207"
-    },
-    {
-      "id": "794906",
-      "firstName": "Gabriel",
-      "lastName": "Amard",
-      "aliases": [],
-      "group": "lfi-nfp",
-      "department": "Rhône",
-      "constituency": 6,
-      "profession": "Cadre administratif et commercial d'entreprise",
-      "difficulty": 1,
-      "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA794906"
     },
     {
       "id": "841495",
@@ -432,18 +420,6 @@
       "profession": "Autre cadre (secteur privé)",
       "difficulty": 2,
       "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA642847"
-    },
-    {
-      "id": "718884",
-      "firstName": "Valérie",
-      "lastName": "Bazin-Malgras",
-      "aliases": [],
-      "group": "dr",
-      "department": "Aube",
-      "constituency": 2,
-      "profession": "Commerçante",
-      "difficulty": 3,
-      "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA718884"
     },
     {
       "id": "793158",
@@ -998,18 +974,6 @@
       "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA794938"
     },
     {
-      "id": "841131",
-      "firstName": "Manon",
-      "lastName": "Bouquin",
-      "aliases": [],
-      "group": "rn",
-      "department": "Hérault",
-      "constituency": 4,
-      "profession": "(33) - Cadre de la fonction publique",
-      "difficulty": 2,
-      "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA841131"
-    },
-    {
       "id": "342240",
       "firstName": "Jean-Luc",
       "lastName": "Bourgeaux",
@@ -1194,7 +1158,7 @@
       "firstName": "Philippe",
       "lastName": "Brun",
       "aliases": [],
-      "group": "soc",
+      "group": "ni",
       "department": "Eure",
       "constituency": 4,
       "profession": "Magistrat administratif",
@@ -2042,18 +2006,6 @@
       "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA793166"
     },
     {
-      "id": "793928",
-      "firstName": "Edwige",
-      "lastName": "Diaz",
-      "aliases": [],
-      "group": "rn",
-      "department": "Gironde",
-      "constituency": 11,
-      "profession": "Cadre administratif et commercial d'entreprise",
-      "difficulty": 1,
-      "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA793928"
-    },
-    {
       "id": "841919",
       "firstName": "Dieynaba",
       "lastName": "Diop",
@@ -2498,6 +2450,18 @@
       "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA722134"
     },
     {
+      "id": "840195",
+      "firstName": "Muriel",
+      "lastName": "Fiol",
+      "aliases": [],
+      "group": "rn",
+      "department": "Var",
+      "constituency": 6,
+      "profession": "Médecin",
+      "difficulty": 3,
+      "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA840195"
+    },
+    {
       "id": "267780",
       "firstName": "Agnès",
       "lastName": "Firmin Le Bodo",
@@ -2654,6 +2618,18 @@
       "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA793892"
     },
     {
+      "id": "841079",
+      "firstName": "Laurence",
+      "lastName": "Gardet",
+      "aliases": [],
+      "group": "rn",
+      "department": "Gard",
+      "constituency": 6,
+      "profession": "Sans profession déclarée",
+      "difficulty": 3,
+      "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA841079"
+    },
+    {
       "id": "795010",
       "firstName": "Marie-Charlotte",
       "lastName": "Garin",
@@ -2700,6 +2676,18 @@
       "profession": "Médecin généraliste",
       "difficulty": 1,
       "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA721024"
+    },
+    {
+      "id": "642734",
+      "firstName": "Éric",
+      "lastName": "Gérard",
+      "aliases": [],
+      "group": "liot",
+      "department": "Eure-et-Loir",
+      "constituency": 3,
+      "profession": "Pharmacien",
+      "difficulty": 3,
+      "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA642734"
     },
     {
       "id": "794470",
@@ -2750,16 +2738,16 @@
       "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA841737"
     },
     {
-      "id": "796034",
-      "firstName": "Frank",
-      "lastName": "Giletti",
+      "id": "841135",
+      "firstName": "Benoit",
+      "lastName": "Gilhet",
       "aliases": [],
       "group": "rn",
-      "department": "Var",
-      "constituency": 6,
-      "profession": "Fonctionnaire",
+      "department": "Hérault",
+      "constituency": 4,
+      "profession": "Chef d'équipe dans le secteur du transport",
       "difficulty": 3,
-      "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA796034"
+      "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA841135"
     },
     {
       "id": "793832",
@@ -3110,6 +3098,18 @@
       "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA842263"
     },
     {
+      "id": "794910",
+      "firstName": "Melouka",
+      "lastName": "Hadj-Mimoune",
+      "aliases": [],
+      "group": "soc",
+      "department": "Rhône",
+      "constituency": 6,
+      "profession": null,
+      "difficulty": 3,
+      "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA794910"
+    },
+    {
       "id": "841947",
       "firstName": "Zahia",
       "lastName": "Hamdane",
@@ -3278,18 +3278,6 @@
       "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA842085"
     },
     {
-      "id": "841017",
-      "firstName": "Harold",
-      "lastName": "Huwart",
-      "aliases": [],
-      "group": "liot",
-      "department": "Eure-et-Loir",
-      "constituency": 3,
-      "profession": "Administrateur de l'État",
-      "difficulty": 2,
-      "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA841017"
-    },
-    {
       "id": "267200",
       "firstName": "Sébastien",
       "lastName": "Huyghe",
@@ -3422,18 +3410,6 @@
       "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA840745"
     },
     {
-      "id": "841075",
-      "firstName": "Sylvie",
-      "lastName": "Josserand",
-      "aliases": [],
-      "group": "rn",
-      "department": "Gard",
-      "constituency": 6,
-      "profession": "(31) - Profession libérale",
-      "difficulty": 2,
-      "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA841075"
-    },
-    {
       "id": "720038",
       "firstName": "Sandrine",
       "lastName": "Josso",
@@ -3540,18 +3516,6 @@
       "profession": "Chargé d'assistance automobile",
       "difficulty": 1,
       "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA794130"
-    },
-    {
-      "id": "719052",
-      "firstName": "Loïc",
-      "lastName": "Kervran",
-      "aliases": [],
-      "group": "hor",
-      "department": "Cher",
-      "constituency": 3,
-      "profession": "Autre cadre (secteur privé)",
-      "difficulty": 2,
-      "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA719052"
     },
     {
       "id": "643184",
@@ -5378,18 +5342,6 @@
       "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA721844"
     },
     {
-      "id": "793572",
-      "firstName": "Christophe",
-      "lastName": "Plassard",
-      "aliases": [],
-      "group": "hor",
-      "department": "Charente-Maritime",
-      "constituency": 5,
-      "profession": "Profession libérale",
-      "difficulty": 3,
-      "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA793572"
-    },
-    {
       "id": "793664",
       "firstName": "Marie",
       "lastName": "Pochon",
@@ -5736,6 +5688,18 @@
       "profession": "(31) - Profession libérale",
       "difficulty": 3,
       "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA841981"
+    },
+    {
+      "id": "840849",
+      "firstName": "Emmanuel",
+      "lastName": "Riotte",
+      "aliases": [],
+      "group": "hor",
+      "department": "Cher",
+      "constituency": 3,
+      "profession": "Retraité",
+      "difficulty": 3,
+      "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA840849"
     },
     {
       "id": "721426",
@@ -6688,7 +6652,7 @@
     {
       "id": "794118",
       "firstName": "Antoine",
-      "lastName": "Vermorel-Marques",
+      "lastName": "Vermorel",
       "aliases": [],
       "group": "dr",
       "department": "Loire",

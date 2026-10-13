@@ -98,6 +98,7 @@ dépendance.
 ├── scripts/
 │   ├── fetch-deputies.ts          # CSV open data → deputies.json
 │   ├── check-photo-links.ts       # HEAD sur chaque portrait
+│   ├── diff-composition.ts        # résumé lisible des écarts, corps de PR (§5.2)
 │   └── validate-data.ts           # échoue si le JSON est invalide
 └── src/
     ├── main.tsx
@@ -194,8 +195,15 @@ pas** : voir §7.9.
 
 ### 5.1 Périmètre
 
-**Les 577 députés en exercice**, et eux seuls. Ni les anciens, ni les suppléants, ni
-les députés européens.
+**Les députés en exercice**, et eux seuls. Ni les anciens, ni les suppléants, ni les
+députés européens.
+
+⚠️ **577 est le nombre de sièges, pas le nombre de députés.** Entre un départ et la
+partielle qui le remplace, le siège est vacant et l'open data ne le publie pas : le
+fichier est descendu à 574 en octobre 2026. Ne jamais coder 577 en dur comme un
+invariant — `data.test.ts` vérifie un intervalle, qui attrape un fichier tronqué sans
+échouer sur une vacance ordinaire. Une assertion stricte paralyserait le contrôle
+hebdomadaire (§5.2) au moment précis où il a quelque chose à dire.
 
 Un député sans portrait publié sur le site de l'Assemblée n'entre pas dans la base :
 une manche sans photo n'a pas de sens. Le cas doit rester rare et être journalisé.
@@ -209,10 +217,33 @@ partielles, entrées au Gouvernement (le suppléant prend le siège), et surtout
 Trois conséquences à traiter dès le départ :
 
 1. `scripts/fetch-deputies.ts` doit être **idempotent** et rejouable en une commande.
-2. `.github/workflows/check-freshness.yml` retélécharge le CSV chaque semaine, le
-   compare à `deputies.json` et **ouvre une issue** en cas d'écart, avec le détail.
-   Il ne commite rien tout seul : une réponse fausse est un bug visible, une mise à
-   jour automatique non relue en est un invisible.
+2. `.github/workflows/check-freshness.yml` retélécharge le CSV chaque semaine et, en
+   cas d'écart, **régénère la base et ouvre une pull request**. Il ne pousse jamais
+   sur `main` : une réponse fausse est un bug visible, une mise à jour automatique
+   non relue en est un invisible. La relecture reste humaine, mais elle porte sur un
+   changement déjà prêt à fusionner.
+
+   Le corps de la PR est produit par `scripts/diff-composition.ts`, et c'est lui qui
+   fait tout l'intérêt du dispositif. Un diff de `deputies.json` est illisible — 200 ko
+   de JSON — et le premier état du workflow, qui ouvrait une issue disant seulement
+   « la composition a changé », ne valait guère mieux : six issues identiques se sont
+   empilées en six semaines sans que personne ne sache quoi relire. Le script classe
+   donc les écarts, et met **les changements de groupe en tête**, parce que ce sont
+   les seuls qui rendent FAUSSE une réponse jusque-là correcte ; arrivées et départs
+   ne font qu'ajouter ou retirer des fiches.
+
+   Il signale aussi les arrivants rangés au niveau 3 faute de figurer dans l'échelle
+   figée (§7.9) : c'est le comportement voulu, mais c'est un arbitrage, et il mérite
+   d'être posé sous les yeux du relecteur plutôt que découvert en jeu.
+
+   Une **branche fixe**, `data/composition-assemblee`, réécrite en force à chaque
+   exécution : deux semaines de changements successifs laisseraient sinon deux PR
+   concurrentes, dont la plus ancienne serait périmée. La PR existante est mise à
+   jour, pas doublée.
+
+   ⚠️ Le réglage « Allow GitHub Actions to create and approve pull requests » doit
+   être actif dans le dépôt, sans quoi `GITHUB_TOKEN` ne peut pas ouvrir la PR.
+
 3. `deputies.json` porte un champ de tête `fetchedAt` (date ISO). L'interface affiche
    discrètement « données au JJ/MM/AAAA » sur la page de crédits. Un joueur qui trouve
    une réponse fausse doit pouvoir comprendre pourquoi.

@@ -1,11 +1,14 @@
 # Contrôle hebdomadaire de fraîcheur. Voir CLAUDE.md §5.2.
 #
 # La composition de l'Assemblée bouge : démissions, élections partielles, et surtout
-# changements de groupe, qui changent la bonne réponse. Ce workflow OUVRE UNE ISSUE
-# au lieu de commiter tout seul : une réponse fausse est un bug visible, une mise à
-# jour automatique non relue en est un invisible.
+# changements de groupe, qui rendent FAUSSE une réponse jusque-là correcte.
 #
-# Volontairement non bloquant : il dépend d'un serveur tiers.
+# Le workflow régénère la base et ouvre une PULL REQUEST. Il ne pousse jamais sur
+# `main` : une mise à jour non relue serait un bug invisible, là où la PR met sous
+# les yeux ce qui a changé — et notamment les arrivants, qu'il faut arbitrer dans
+# l'échelle de difficulté figée.
+#
+# Volontairement non bloquant par ailleurs : il dépend d'un serveur tiers.
 name: Fraîcheur des données
 
 on:
@@ -14,11 +17,11 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  issues: write
+  contents: write
+  pull-requests: write
 
 jobs:
-  compare:
+  rafraichir:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -26,36 +29,62 @@ jobs:
         with: { node-version: 24, cache: npm }
       - run: npm ci
 
-      - name: Régénérer et comparer
-        id: diff
+      - name: Régénérer la base
         run: |
           cp data/deputies.json /tmp/avant.json
           npm run fetch
-          # `fetchedAt` change à chaque exécution : on ne compare que les députés.
-          node -e "
-            const fs = require('node:fs');
-            const lire = (p) => JSON.stringify(JSON.parse(fs.readFileSync(p)).deputies);
-            const identique = lire('/tmp/avant.json') === lire('data/deputies.json');
-            fs.appendFileSync(process.env.GITHUB_OUTPUT, 'changed=' + !identique + '\n');
-          "
 
-      - name: Ouvrir une issue si la composition a changé
-        if: steps.diff.outputs.changed == 'true'
-        uses: actions/github-script@v7
-        with:
-          script: |
-            await github.rest.issues.create({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              title: "Composition de l'Assemblée modifiée",
-              body: [
-                "Le fichier open data de l'Assemblée ne correspond plus à `data/deputies.json`.",
-                "",
-                "Cela peut venir d'un changement de groupe, d'une démission ou d'une",
-                "élection partielle. Tant que la base n'est pas régénérée, le jeu peut",
-                "refuser une bonne réponse.",
-                "",
-                "Pour mettre à jour : `npm run fetch` puis `npm run verify`.",
-              ].join("\n"),
-              labels: ["données"],
-            });
+      - name: Résumer les changements
+        id: resume
+        run: |
+          # Le script sort en 1 quand rien n'a bougé : `fetchedAt` change à chaque
+          # exécution, donc comparer les fichiers ne dirait rien. Lui compare les
+          # députés un à un.
+          if npx tsx scripts/diff-composition.ts /tmp/avant.json data/deputies.json \
+               > /tmp/resume.md; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            cat /tmp/resume.md
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Composition inchangée."
+          fi
+
+      # Avant de proposer quoi que ce soit : la base régénérée doit être valide et
+      # le jeu doit tourner dessus. Un groupe inconnu fait échouer ici, et c'est
+      # voulu — mieux vaut une alerte rouge qu'une PR qui casse le jeu.
+      - name: Valider
+        if: steps.resume.outputs.changed == 'true'
+        run: npm run verify
+
+      - name: Ouvrir ou mettre à jour la pull request
+        if: steps.resume.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCHE: data/composition-assemblee
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Une branche FIXE, réécrite chaque semaine : sans cela, une composition
+          # qui bouge deux semaines de suite laisserait deux PR concurrentes, dont
+          # la plus ancienne serait périmée.
+          git switch -c "$BRANCHE"
+          git add data/deputies.json
+          git commit -m "data: refresh the Assembly's composition"
+          git push --force origin "$BRANCHE"
+
+          # `gh pr edit` prend la PR en argument POSITIONNEL, pas en `--head` : il
+          # faut donc son numéro, qu'on récupère ici pour savoir du même coup s'il
+          # y a une PR à mettre à jour ou une à ouvrir.
+          NUMERO="$(gh pr list --head "$BRANCHE" --state open --json number -q '.[0].number')"
+          if [ -z "$NUMERO" ]; then
+            gh pr create --base main --head "$BRANCHE" \
+              --title "Composition de l'Assemblée : mise à jour hebdomadaire" \
+              --body-file /tmp/resume.md \
+              --label "données"
+          else
+            # La PR existe déjà : le push a actualisé le contenu, reste à remplacer
+            # son corps, devenu faux.
+            gh pr edit "$NUMERO" --body-file /tmp/resume.md
+          fi

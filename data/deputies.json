@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-13T13:36:46.986Z",
+  "fetchedAt": "2026-10-26T12:25:01.361Z",
   "deputies": [
     {
       "id": "793214",
@@ -3105,7 +3105,7 @@
       "group": "soc",
       "department": "Rhône",
       "constituency": 6,
-      "profession": null,
+      "profession": "Assistante familiale",
       "difficulty": 3,
       "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA794910"
     },

@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-13T13:36:46.986Z",
+  "fetchedAt": "2026-11-02T14:58:39.829Z",
   "deputies": [
     {
       "id": "793214",
@@ -2550,7 +2550,7 @@
       "firstName": "Alix",
       "lastName": "Fruchon",
       "aliases": [],
-      "group": "dr",
+      "group": "liot",
       "department": "Indre",
       "constituency": 2,
       "profession": "Juriste",
@@ -2625,7 +2625,7 @@
       "group": "rn",
       "department": "Gard",
       "constituency": 6,
-      "profession": "Sans profession déclarée",
+      "profession": "Commerçante",
       "difficulty": 3,
       "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA841079"
     },
@@ -3105,7 +3105,7 @@
       "group": "soc",
       "department": "Rhône",
       "constituency": 6,
-      "profession": null,
+      "profession": "Assistante familiale",
       "difficulty": 3,
       "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA794910"
     },

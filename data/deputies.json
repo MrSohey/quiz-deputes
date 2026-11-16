@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-13T13:36:46.986Z",
+  "fetchedAt": "2026-11-16T15:04:15.260Z",
   "deputies": [
     {
       "id": "793214",
@@ -768,18 +768,6 @@
       "profession": "(37) - Cadre administratif et commercial d'entreprise",
       "difficulty": 2,
       "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA840889"
-    },
-    {
-      "id": "796042",
-      "firstName": "Frédéric",
-      "lastName": "Boccaletti",
-      "aliases": [],
-      "group": "rn",
-      "department": "Var",
-      "constituency": 7,
-      "profession": "(85) - Personne diverse sans activité professionnelle de moins de 60 ans",
-      "difficulty": 2,
-      "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA796042"
     },
     {
       "id": "841543",
@@ -1982,6 +1970,18 @@
       "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA794982"
     },
     {
+      "id": "796046",
+      "firstName": "Isabelle",
+      "lastName": "Delyon",
+      "aliases": [],
+      "group": "rn",
+      "department": "Var",
+      "constituency": 7,
+      "profession": "Expert-Comptable retraitée",
+      "difficulty": 3,
+      "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA796046"
+    },
+    {
       "id": "330909",
       "firstName": "Vincent",
       "lastName": "Descoeur",
@@ -2550,7 +2550,7 @@
       "firstName": "Alix",
       "lastName": "Fruchon",
       "aliases": [],
-      "group": "dr",
+      "group": "liot",
       "department": "Indre",
       "constituency": 2,
       "profession": "Juriste",
@@ -2625,7 +2625,7 @@
       "group": "rn",
       "department": "Gard",
       "constituency": 6,
-      "profession": "Sans profession déclarée",
+      "profession": "Commerçante",
       "difficulty": 3,
       "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA841079"
     },
@@ -3105,7 +3105,7 @@
       "group": "soc",
       "department": "Rhône",
       "constituency": 6,
-      "profession": null,
+      "profession": "Assistante familiale",
       "difficulty": 3,
       "sourceUrl": "https://www.assemblee-nationale.fr/dyn/deputes/PA794910"
     },
